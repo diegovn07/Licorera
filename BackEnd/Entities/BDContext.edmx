@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="LicoreraModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Licores">
+          <Key>
+            <PropertyRef Name="idLicor" />
+          </Key>
+          <Property Name="idLicor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="vNombre" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="idMarca" Type="int" Nullable="false" />
+          <Property Name="idTipo" Type="int" Nullable="false" />
+          <Property Name="idProveedor" Type="int" Nullable="false" />
+          <Property Name="vDescripción" Type="varchar" MaxLength="300" />
+          <Property Name="iUnidades" Type="int" Nullable="false" />
+          <Property Name="iPrecio" Type="int" Nullable="false" />
+          <Property Name="Foto_Licor" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Marcas">
+          <Key>
+            <PropertyRef Name="idMarca" />
+          </Key>
+          <Property Name="idMarca" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="vNombre" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Proveedores">
+          <Key>
+            <PropertyRef Name="idProveedor" />
+          </Key>
+          <Property Name="idProveedor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="vNombre" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="iCedula" Type="int" Nullable="false" />
+          <Property Name="iTelefono" Type="int" Nullable="false" />
+          <Property Name="vCorreo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="vDireccion" Type="varchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Tipos">
+          <Key>
+            <PropertyRef Name="idTipo" />
+          </Key>
+          <Property Name="idTipo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="vNombre" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Licores__idMarca__2F10007B">
+          <End Role="Marcas" Type="Self.Marcas" Multiplicity="1" />
+          <End Role="Licores" Type="Self.Licores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marcas">
+              <PropertyRef Name="idMarca" />
+            </Principal>
+            <Dependent Role="Licores">
+              <PropertyRef Name="idMarca" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Licores__idProve__30F848ED">
+          <End Role="Proveedores" Type="Self.Proveedores" Multiplicity="1" />
+          <End Role="Licores" Type="Self.Licores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedores">
+              <PropertyRef Name="idProveedor" />
+            </Principal>
+            <Dependent Role="Licores">
+              <PropertyRef Name="idProveedor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Licores__idTipo__300424B4">
+          <End Role="Tipos" Type="Self.Tipos" Multiplicity="1" />
+          <End Role="Licores" Type="Self.Licores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tipos">
+              <PropertyRef Name="idTipo" />
+            </Principal>
+            <Dependent Role="Licores">
+              <PropertyRef Name="idTipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="LicoreraModelStoreContainer">
+          <EntitySet Name="Licores" EntityType="Self.Licores" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Marcas" EntityType="Self.Marcas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Proveedores" EntityType="Self.Proveedores" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tipos" EntityType="Self.Tipos" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Licores__idMarca__2F10007B" Association="Self.FK__Licores__idMarca__2F10007B">
+            <End Role="Marcas" EntitySet="Marcas" />
+            <End Role="Licores" EntitySet="Licores" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Licores__idProve__30F848ED" Association="Self.FK__Licores__idProve__30F848ED">
+            <End Role="Proveedores" EntitySet="Proveedores" />
+            <End Role="Licores" EntitySet="Licores" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Licores__idTipo__300424B4" Association="Self.FK__Licores__idTipo__300424B4">
+            <End Role="Tipos" EntitySet="Tipos" />
+            <End Role="Licores" EntitySet="Licores" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LicoreraModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Licores">
+          <Key>
+            <PropertyRef Name="idLicor" />
+          </Key>
+          <Property Name="idLicor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="vNombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="idMarca" Type="Int32" Nullable="false" />
+          <Property Name="idTipo" Type="Int32" Nullable="false" />
+          <Property Name="idProveedor" Type="Int32" Nullable="false" />
+          <Property Name="vDescripción" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="iUnidades" Type="Int32" Nullable="false" />
+          <Property Name="iPrecio" Type="Int32" Nullable="false" />
+          <Property Name="Foto_Licor" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Marcas" Relationship="Self.FK__Licores__idMarca__2F10007B" FromRole="Licores" ToRole="Marcas" />
+          <NavigationProperty Name="Proveedores" Relationship="Self.FK__Licores__idProve__30F848ED" FromRole="Licores" ToRole="Proveedores" />
+          <NavigationProperty Name="Tipos" Relationship="Self.FK__Licores__idTipo__300424B4" FromRole="Licores" ToRole="Tipos" />
+        </EntityType>
+        <EntityType Name="Marcas">
+          <Key>
+            <PropertyRef Name="idMarca" />
+          </Key>
+          <Property Name="idMarca" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="vNombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Licores" Relationship="Self.FK__Licores__idMarca__2F10007B" FromRole="Marcas" ToRole="Licores" />
+        </EntityType>
+        <EntityType Name="Proveedores">
+          <Key>
+            <PropertyRef Name="idProveedor" />
+          </Key>
+          <Property Name="idProveedor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="vNombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="iCedula" Type="Int32" Nullable="false" />
+          <Property Name="iTelefono" Type="Int32" Nullable="false" />
+          <Property Name="vCorreo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="vDireccion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Licores" Relationship="Self.FK__Licores__idProve__30F848ED" FromRole="Proveedores" ToRole="Licores" />
+        </EntityType>
+        <EntityType Name="Tipos">
+          <Key>
+            <PropertyRef Name="idTipo" />
+          </Key>
+          <Property Name="idTipo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="vNombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Licores" Relationship="Self.FK__Licores__idTipo__300424B4" FromRole="Tipos" ToRole="Licores" />
+        </EntityType>
+        <Association Name="FK__Licores__idMarca__2F10007B">
+          <End Role="Marcas" Type="Self.Marcas" Multiplicity="1" />
+          <End Role="Licores" Type="Self.Licores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Marcas">
+              <PropertyRef Name="idMarca" />
+            </Principal>
+            <Dependent Role="Licores">
+              <PropertyRef Name="idMarca" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Licores__idProve__30F848ED">
+          <End Role="Proveedores" Type="Self.Proveedores" Multiplicity="1" />
+          <End Role="Licores" Type="Self.Licores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Proveedores">
+              <PropertyRef Name="idProveedor" />
+            </Principal>
+            <Dependent Role="Licores">
+              <PropertyRef Name="idProveedor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Licores__idTipo__300424B4">
+          <End Role="Tipos" Type="Self.Tipos" Multiplicity="1" />
+          <End Role="Licores" Type="Self.Licores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tipos">
+              <PropertyRef Name="idTipo" />
+            </Principal>
+            <Dependent Role="Licores">
+              <PropertyRef Name="idTipo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BDContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Licores" EntityType="Self.Licores" />
+          <EntitySet Name="Marcas" EntityType="Self.Marcas" />
+          <EntitySet Name="Proveedores" EntityType="Self.Proveedores" />
+          <EntitySet Name="Tipos" EntityType="Self.Tipos" />
+          <AssociationSet Name="FK__Licores__idMarca__2F10007B" Association="Self.FK__Licores__idMarca__2F10007B">
+            <End Role="Marcas" EntitySet="Marcas" />
+            <End Role="Licores" EntitySet="Licores" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Licores__idProve__30F848ED" Association="Self.FK__Licores__idProve__30F848ED">
+            <End Role="Proveedores" EntitySet="Proveedores" />
+            <End Role="Licores" EntitySet="Licores" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Licores__idTipo__300424B4" Association="Self.FK__Licores__idTipo__300424B4">
+            <End Role="Tipos" EntitySet="Tipos" />
+            <End Role="Licores" EntitySet="Licores" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LicoreraModelStoreContainer" CdmEntityContainer="BDContext">
+          <EntitySetMapping Name="Licores">
+            <EntityTypeMapping TypeName="LicoreraModel.Licores">
+              <MappingFragment StoreEntitySet="Licores">
+                <ScalarProperty Name="idLicor" ColumnName="idLicor" />
+                <ScalarProperty Name="vNombre" ColumnName="vNombre" />
+                <ScalarProperty Name="idMarca" ColumnName="idMarca" />
+                <ScalarProperty Name="idTipo" ColumnName="idTipo" />
+                <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />
+                <ScalarProperty Name="vDescripción" ColumnName="vDescripción" />
+                <ScalarProperty Name="iUnidades" ColumnName="iUnidades" />
+                <ScalarProperty Name="iPrecio" ColumnName="iPrecio" />
+                <ScalarProperty Name="Foto_Licor" ColumnName="Foto_Licor" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Marcas">
+            <EntityTypeMapping TypeName="LicoreraModel.Marcas">
+              <MappingFragment StoreEntitySet="Marcas">
+                <ScalarProperty Name="idMarca" ColumnName="idMarca" />
+                <ScalarProperty Name="vNombre" ColumnName="vNombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Proveedores">
+            <EntityTypeMapping TypeName="LicoreraModel.Proveedores">
+              <MappingFragment StoreEntitySet="Proveedores">
+                <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />
+                <ScalarProperty Name="vNombre" ColumnName="vNombre" />
+                <ScalarProperty Name="iCedula" ColumnName="iCedula" />
+                <ScalarProperty Name="iTelefono" ColumnName="iTelefono" />
+                <ScalarProperty Name="vCorreo" ColumnName="vCorreo" />
+                <ScalarProperty Name="vDireccion" ColumnName="vDireccion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tipos">
+            <EntityTypeMapping TypeName="LicoreraModel.Tipos">
+              <MappingFragment StoreEntitySet="Tipos">
+                <ScalarProperty Name="idTipo" ColumnName="idTipo" />
+                <ScalarProperty Name="vNombre" ColumnName="vNombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
