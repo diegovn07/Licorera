@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LicoreraModelStoreContainer" CdmEntityContainer="BDContext">
+    <EntitySetMapping Name="Licores">
+      <EntityTypeMapping TypeName="LicoreraModel.Licores">
+        <MappingFragment StoreEntitySet="Licores">
+          <ScalarProperty Name="idLicor" ColumnName="idLicor" />
+          <ScalarProperty Name="vNombre" ColumnName="vNombre" />
+          <ScalarProperty Name="idMarca" ColumnName="idMarca" />
+          <ScalarProperty Name="idTipo" ColumnName="idTipo" />
+          <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />
+          <ScalarProperty Name="vDescripción" ColumnName="vDescripción" />
+          <ScalarProperty Name="iUnidades" ColumnName="iUnidades" />
+          <ScalarProperty Name="iPrecio" ColumnName="iPrecio" />
+          <ScalarProperty Name="Foto_Licor" ColumnName="Foto_Licor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Marcas">
+      <EntityTypeMapping TypeName="LicoreraModel.Marcas">
+        <MappingFragment StoreEntitySet="Marcas">
+          <ScalarProperty Name="idMarca" ColumnName="idMarca" />
+          <ScalarProperty Name="vNombre" ColumnName="vNombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Proveedores">
+      <EntityTypeMapping TypeName="LicoreraModel.Proveedores">
+        <MappingFragment StoreEntitySet="Proveedores">
+          <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />
+          <ScalarProperty Name="vNombre" ColumnName="vNombre" />
+          <ScalarProperty Name="iCedula" ColumnName="iCedula" />
+          <ScalarProperty Name="iTelefono" ColumnName="iTelefono" />
+          <ScalarProperty Name="vCorreo" ColumnName="vCorreo" />
+          <ScalarProperty Name="vDireccion" ColumnName="vDireccion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipos">
+      <EntityTypeMapping TypeName="LicoreraModel.Tipos">
+        <MappingFragment StoreEntitySet="Tipos">
+          <ScalarProperty Name="idTipo" ColumnName="idTipo" />
+          <ScalarProperty Name="vNombre" ColumnName="vNombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
