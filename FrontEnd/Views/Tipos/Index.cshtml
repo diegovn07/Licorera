@@ -4,30 +4,51 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+    <div class="container">
+        <h2>Tipos</h2>
 
-<p>
-    @Html.ActionLink("Crear Nueva", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.vNombre)
-        </th>
-        <th></th>
-    </tr>
+        <p>
+            @Html.ActionLink("Crear Nueva", "Create")
+        </p>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.vNombre)
-        </td>
-        <td>
-            @Html.ActionLink("Editar", "Edit", new { id=item.idTipo }) |
-            @Html.ActionLink("Detalles", "Details", new { id=item.idTipo }) |
-            @Html.ActionLink("Eliminar", "Delete", new { id=item.idTipo })
-        </td>
-    </tr>
+        <input class="form-control" id="myInput" type="text" placeholder="Buscar..">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.vNombre)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.vNombre)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Editar", "Edit", new { id = item.idTipo }) |
+                            @Html.ActionLink("Detalles", "Details", new { id = item.idTipo }) |
+                            @Html.ActionLink("Eliminar", "Delete", new { id = item.idTipo })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
 }
-
-</table>

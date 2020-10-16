@@ -3,38 +3,46 @@
 @{
     ViewBag.Title = "Create";
 }
+    <div class="container">
+        <h2>Crear</h2>
 
-<h2>Crear</h2>
 
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
 
-@using (Html.BeginForm()) 
-{
-    @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>Tipos</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(model => model.vNombre, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.vNombre, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.vNombre, "", new { @class = "text-danger" })
+            <div class="form-horizontal">
+                <h4>Tipos</h4>
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(model => model.vNombre, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.vNombre, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.vNombre, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="col-sm-10">
+                    <select class="selectpicker" data-live-search="true">
+                        <option value="china">China</option>
+                        <option value="malayasia">Malayasia</option>
+                        <option value="singapore">Singapore</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Create" class="btn btn-default" />
+                    </div>
+                </div>
             </div>
-        </div>
+        }
 
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
+        <div>
+            @Html.ActionLink("Back to List", "Index")
         </div>
     </div>
-}
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
-
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+        }
