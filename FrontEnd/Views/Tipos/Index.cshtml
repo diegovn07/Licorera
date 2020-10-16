@@ -1,0 +1,33 @@
+﻿@model IEnumerable<FrontEnd.Models.TiposViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Crear Nueva", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.vNombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.vNombre)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.idTipo }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.idTipo }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.idTipo })
+        </td>
+    </tr>
+}
+
+</table>
