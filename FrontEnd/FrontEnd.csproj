@@ -130,12 +130,16 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LicoresController.cs" />
     <Compile Include="Controllers\MarcasController.cs" />
+    <Compile Include="Controllers\ProveedoresController.cs" />
     <Compile Include="Controllers\TiposController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\LicoresViewModel.cs" />
     <Compile Include="Models\MarcasViewModel.cs" />
+    <Compile Include="Models\ProveedoresViewModel.cs" />
     <Compile Include="Models\TiposViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -290,6 +294,16 @@
     <Content Include="Views\Tipos\Details.cshtml" />
     <Content Include="Views\Tipos\Delete.cshtml" />
     <Content Include="Views\Tipos\Create.cshtml" />
+    <Content Include="Views\Licores\Index.cshtml" />
+    <Content Include="Views\Licores\Create.cshtml" />
+    <Content Include="Views\Licores\Edit.cshtml" />
+    <Content Include="Views\Licores\Details.cshtml" />
+    <Content Include="Views\Licores\Delete.cshtml" />
+    <Content Include="Views\Proveedores\Index.cshtml" />
+    <Content Include="Views\Proveedores\Create.cshtml" />
+    <Content Include="Views\Proveedores\Edit.cshtml" />
+    <Content Include="Views\Proveedores\Details.cshtml" />
+    <Content Include="Views\Proveedores\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

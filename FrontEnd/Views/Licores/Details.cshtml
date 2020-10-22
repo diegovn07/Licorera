@@ -1,0 +1,83 @@
+﻿@model FrontEnd.Models.LicoresViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+    <div class="container">
+        <h2>Details</h2>
+
+        <div>
+            <h4>LicoresViewModel</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.vNombre)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.vNombre)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.idMarca)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.marca.vNombre)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.idTipo)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.tipo.vNombre)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.idProveedor)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.proveedor.vNombre)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.vDescripción)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.vDescripción)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.iUnidades)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.iUnidades)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.iPrecio)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.iPrecio)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Foto_Licor)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Foto_Licor)
+                </dd>
+
+            </dl>
+        </div>
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.idLicor }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+    </div>
