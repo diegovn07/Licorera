@@ -1,0 +1,59 @@
+﻿@model IEnumerable<FrontEnd.Models.ProveedoresViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+    <div class="container">
+        <h2>Index</h2>
+
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.vNombre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.iCedula)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.iTelefono)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.vCorreo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.vDireccion)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.vNombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.iCedula)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.iTelefono)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.vCorreo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.vDireccion)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.idProveedor }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.idProveedor }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.idProveedor })
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>

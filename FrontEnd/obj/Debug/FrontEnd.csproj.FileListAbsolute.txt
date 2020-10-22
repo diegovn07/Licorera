@@ -80,3 +80,8 @@ C:\Programas\Licorera\FrontEnd\obj\Debug\FrontEnd.csprojAssemblyReference.cache
 C:\Programas\Licorera\FrontEnd\obj\Debug\FrontEnd.csproj.CopyComplete
 C:\Programas\Licorera\FrontEnd\obj\Debug\FrontEnd.dll
 C:\Programas\Licorera\FrontEnd\obj\Debug\FrontEnd.pdb
+C:\Programas\Licorera\FrontEnd\bin\BackEnd.dll
+C:\Programas\Licorera\FrontEnd\bin\EntityFramework.dll
+C:\Programas\Licorera\FrontEnd\bin\BackEnd.pdb
+C:\Programas\Licorera\FrontEnd\bin\BackEnd.dll.config
+C:\Programas\Licorera\FrontEnd\bin\EntityFramework.SqlServer.dll

@@ -5,7 +5,7 @@ C:\Programas\Licorera\BackEnd\bin\Debug\EntityFramework.dll
 C:\Programas\Licorera\BackEnd\bin\Debug\EntityFramework.SqlServer.dll
 C:\Programas\Licorera\BackEnd\bin\Debug\EntityFramework.xml
 C:\Programas\Licorera\BackEnd\bin\Debug\EntityFramework.SqlServer.xml
-C:\Programas\Licorera\BackEnd\obj\Debug\BackEnd.csprojAssemblyReference.cache
 C:\Programas\Licorera\BackEnd\obj\Debug\BackEnd.csproj.CopyComplete
 C:\Programas\Licorera\BackEnd\obj\Debug\BackEnd.dll
 C:\Programas\Licorera\BackEnd\obj\Debug\BackEnd.pdb
+C:\Programas\Licorera\BackEnd\obj\Debug\BackEnd.csprojAssemblyReference.cache
