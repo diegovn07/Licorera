@@ -29,6 +29,31 @@ namespace TestBackEnd
 
         }
 
+        [TestMethod]
+        public void TestUpdateMarca()
+        {
+            using (unidad = new UnidadDeTrabajo<Marcas>(new BDContext()))
+            {
+                Marcas marca = unidad.genericDAL.Get(1);
+                marca.vNombre = "Prueba TestCase";
+                unidad.genericDAL.Update(marca);
+                Assert.AreEqual(true, unidad.Complete());
+            }
+        }
+
+        [TestMethod]
+        public void TestDeleteMarca()
+        {
+            Marcas marca = new Marcas
+            {
+                idMarca = 2
+            };
+            using (unidad = new UnidadDeTrabajo<Marcas>(new BDContext()))
+            {
+                unidad.genericDAL.Remove(marca);
+                Assert.AreEqual(true, unidad.Complete());
+            }
+        }
 
         [TestMethod]
         public void TestGetByNameMarca()

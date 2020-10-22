@@ -47,6 +47,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -123,9 +130,17 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LicoresController.cs" />
+    <Compile Include="Controllers\MarcasController.cs" />
+    <Compile Include="Controllers\ProveedoresController.cs" />
+    <Compile Include="Controllers\TiposController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\LicoresViewModel.cs" />
+    <Compile Include="Models\MarcasViewModel.cs" />
+    <Compile Include="Models\ProveedoresViewModel.cs" />
+    <Compile Include="Models\TiposViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -269,10 +284,29 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Marcas\Index.cshtml" />
+    <Content Include="Views\Marcas\Create.cshtml" />
+    <Content Include="Views\Marcas\Edit.cshtml" />
+    <Content Include="Views\Marcas\Details.cshtml" />
+    <Content Include="Views\Marcas\Delete.cshtml" />
+    <Content Include="Views\Tipos\Index.cshtml" />
+    <Content Include="Views\Tipos\Edit.cshtml" />
+    <Content Include="Views\Tipos\Details.cshtml" />
+    <Content Include="Views\Tipos\Delete.cshtml" />
+    <Content Include="Views\Tipos\Create.cshtml" />
+    <Content Include="Views\Licores\Index.cshtml" />
+    <Content Include="Views\Licores\Create.cshtml" />
+    <Content Include="Views\Licores\Edit.cshtml" />
+    <Content Include="Views\Licores\Details.cshtml" />
+    <Content Include="Views\Licores\Delete.cshtml" />
+    <Content Include="Views\Proveedores\Index.cshtml" />
+    <Content Include="Views\Proveedores\Create.cshtml" />
+    <Content Include="Views\Proveedores\Edit.cshtml" />
+    <Content Include="Views\Proveedores\Details.cshtml" />
+    <Content Include="Views\Proveedores\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -284,6 +318,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BackEnd\BackEnd.csproj">
+      <Project>{3C9C9F34-C9DB-47A9-AF26-92ABFCCAC37B}</Project>
+      <Name>BackEnd</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
