@@ -15,7 +15,6 @@ namespace BackEnd.Entities
     public partial class Licores
     {
         public int idLicor { get; set; }
-        public string vNombre { get; set; }
         public int idMarca { get; set; }
         public int idTipo { get; set; }
         public int idProveedor { get; set; }
@@ -23,6 +22,7 @@ namespace BackEnd.Entities
         public int iUnidades { get; set; }
         public int iPrecio { get; set; }
         public string Foto_Licor { get; set; }
+        public Nullable<int> iMl { get; set; }
     
         public virtual Marcas Marcas { get; set; }
         public virtual Proveedores Proveedores { get; set; }

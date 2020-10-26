@@ -4,13 +4,12 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="LicoreraModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="LicoreraModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Licores">
           <Key>
             <PropertyRef Name="idLicor" />
           </Key>
           <Property Name="idLicor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="vNombre" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="idMarca" Type="int" Nullable="false" />
           <Property Name="idTipo" Type="int" Nullable="false" />
           <Property Name="idProveedor" Type="int" Nullable="false" />
@@ -18,6 +17,7 @@
           <Property Name="iUnidades" Type="int" Nullable="false" />
           <Property Name="iPrecio" Type="int" Nullable="false" />
           <Property Name="Foto_Licor" Type="varchar(max)" />
+          <Property Name="iMl" Type="int" />
         </EntityType>
         <EntityType Name="Marcas">
           <Key>
@@ -98,8 +98,7 @@
             <End Role="Licores" EntitySet="Licores" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="LicoreraModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -108,7 +107,6 @@
             <PropertyRef Name="idLicor" />
           </Key>
           <Property Name="idLicor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="vNombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="idMarca" Type="Int32" Nullable="false" />
           <Property Name="idTipo" Type="Int32" Nullable="false" />
           <Property Name="idProveedor" Type="Int32" Nullable="false" />
@@ -119,6 +117,7 @@
           <NavigationProperty Name="Marcas" Relationship="Self.FK__Licores__idMarca__2F10007B" FromRole="Licores" ToRole="Marcas" />
           <NavigationProperty Name="Proveedores" Relationship="Self.FK__Licores__idProve__30F848ED" FromRole="Licores" ToRole="Proveedores" />
           <NavigationProperty Name="Tipos" Relationship="Self.FK__Licores__idTipo__300424B4" FromRole="Licores" ToRole="Tipos" />
+          <Property Name="iMl" Type="Int32" />
         </EntityType>
         <EntityType Name="Marcas">
           <Key>
@@ -211,8 +210,8 @@
           <EntitySetMapping Name="Licores">
             <EntityTypeMapping TypeName="LicoreraModel.Licores">
               <MappingFragment StoreEntitySet="Licores">
+                <ScalarProperty Name="iMl" ColumnName="iMl" />
                 <ScalarProperty Name="idLicor" ColumnName="idLicor" />
-                <ScalarProperty Name="vNombre" ColumnName="vNombre" />
                 <ScalarProperty Name="idMarca" ColumnName="idMarca" />
                 <ScalarProperty Name="idTipo" ColumnName="idTipo" />
                 <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />

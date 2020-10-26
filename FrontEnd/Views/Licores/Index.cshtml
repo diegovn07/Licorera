@@ -1,77 +1,78 @@
 ﻿@model IEnumerable<FrontEnd.Models.LicoresViewModel>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Licorera El Alto";
 }
-    <div class="container">
-        <h2>Index</h2>
+<div class="container">
+    <h2>Licorera El Alto</h2>
 
-        <p>
-            @Html.ActionLink("Create New", "Create")
-        </p>
-        <table class="table">
+    <p>
+        @Html.ActionLink("Agregar Licor", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.idMarca)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.idTipo)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.idProveedor)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.vDescripción)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.iUnidades)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.iPrecio)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.iMl)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.Foto_Licor)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
             <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.vNombre)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.idMarca)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.idTipo)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.idProveedor)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.vDescripción)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.iUnidades)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.iPrecio)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Foto_Licor)
-                </th>
-                <th></th>
+                <td class="align-middle">
+                    @Html.DisplayFor(modelItem => item.marca.vNombre)
+                </td>
+                <td class="align-middle">
+                    @Html.DisplayFor(modelItem => item.tipo.vNombre)
+                </td>
+                <td class="align-middle">
+                    @Html.DisplayFor(modelItem => item.proveedor.vNombre)
+                </td>
+                <td class="align-middle">
+                    @Html.DisplayFor(modelItem => item.vDescripción)
+                </td>
+                <td class="align-middle">
+                    @Html.DisplayFor(modelItem => item.iUnidades)
+                </td>
+                <td class="align-middle">
+                    @Html.DisplayFor(modelItem => item.iPrecio)
+                </td>
+                <td class="align-middle">
+                    @Html.DisplayFor(modelItem => item.iMl) ml
+                </td>
+                <td class="align-middle">
+                    @{ var imgSrc = String.Format("data:image/jpg;base64,{0}", item.Foto_Licor);}
+                    <img style="width:100px;height:200px" src="@imgSrc" alt="Foto Licor" />
+                </td>
+                <td class="align-middle">
+                    @Html.ActionLink("Editar", "Edit", new { id = item.idLicor }) |
+                    @Html.ActionLink("Detalles", "Details", new { id = item.idLicor }) |
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.idLicor })
+                </td>
             </tr>
+        }
 
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.vNombre)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.marca.vNombre)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.tipo.vNombre)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.proveedor.vNombre)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.vDescripción)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.iUnidades)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.iPrecio)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Foto_Licor)
-                    </td>
-                    <td>
-                        @Html.ActionLink("Edit", "Edit", new { id = item.idLicor }) |
-                        @Html.ActionLink("Details", "Details", new { id = item.idLicor }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = item.idLicor })
-                    </td>
-                </tr>
-            }
-
-        </table>
-    </div>
+    </table>
+</div>
