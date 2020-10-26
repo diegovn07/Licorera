@@ -16,14 +16,14 @@ namespace FrontEnd.Controllers
             LicoresViewModel licorViewModel = new LicoresViewModel
             {
                 idLicor = licor.idLicor,
-                vNombre = licor.vNombre,
                 idMarca = (int) licor.idMarca,
                 idTipo = (int) licor.idTipo,
                 idProveedor = (int) licor.idProveedor,
                 vDescripción = licor.vDescripción,
                 iUnidades = licor.iUnidades,
                 iPrecio = licor.iPrecio,
-                Foto_Licor = licor.Foto_Licor
+                Foto_Licor = licor.Foto_Licor,
+                iMl = (int) licor.iMl,
             };
             return licorViewModel;
         }
@@ -33,14 +33,14 @@ namespace FrontEnd.Controllers
             Licores licor = new Licores
             {
                 idLicor = licorViewModel.idLicor,
-                vNombre = licorViewModel.vNombre,
                 idMarca = (int) licorViewModel.idMarca,
                 idTipo = (int) licorViewModel.idTipo,
                 idProveedor = (int) licorViewModel.idProveedor,
                 vDescripción = licorViewModel.vDescripción,
                 iUnidades = licorViewModel.iUnidades,
                 iPrecio = licorViewModel.iPrecio,
-                Foto_Licor = licorViewModel.Foto_Licor
+                Foto_Licor = licorViewModel.Foto_Licor,
+                iMl = (int) licorViewModel.iMl
             };
             return licor;
         }
@@ -103,6 +103,13 @@ namespace FrontEnd.Controllers
         [HttpPost]
         public ActionResult Create(LicoresViewModel licorViewModel)
         {
+            byte[] img = null;
+            using (var binary = new System.IO.BinaryReader(licorViewModel.Foto.InputStream))
+            {
+                img = binary.ReadBytes(licorViewModel.Foto.ContentLength);
+            }
+            string archivoBase64 = System.Convert.ToBase64String(img);
+            licorViewModel.Foto_Licor = archivoBase64;
             using (UnidadDeTrabajo<Licores> unidad = new UnidadDeTrabajo<Licores>(new BDContext()))
             {
                 unidad.genericDAL.Add(this.Convertir(licorViewModel));
@@ -110,6 +117,14 @@ namespace FrontEnd.Controllers
             }
 
             return RedirectToAction("Index");
+        }
+
+        [NonAction]
+        private string Convertir_Imagen(string ruta)
+        {
+            byte[] archivoBytes = System.IO.File.ReadAllBytes(ruta);
+            string archivoBase64 = System.Convert.ToBase64String(archivoBytes);
+            return archivoBase64;
         }
 
         public ActionResult Edit(int id)
@@ -144,7 +159,13 @@ namespace FrontEnd.Controllers
         [HttpPost]
         public ActionResult Edit(LicoresViewModel licorViewModel)
         {
-
+            byte[] img = null;
+            using (var binary = new System.IO.BinaryReader(licorViewModel.Foto.InputStream))
+            {
+                img = binary.ReadBytes(licorViewModel.Foto.ContentLength);
+            }
+            string archivoBase64 = System.Convert.ToBase64String(img);
+            licorViewModel.Foto_Licor = archivoBase64;
 
             using (UnidadDeTrabajo<Licores> unidad = new UnidadDeTrabajo<Licores>(new BDContext()))
             {

@@ -11,13 +11,6 @@
             <h4>LicoresViewModel</h4>
             <hr />
             <dl class="dl-horizontal">
-                <dt>
-                    @Html.DisplayNameFor(model => model.vNombre)
-                </dt>
-
-                <dd>
-                    @Html.DisplayFor(model => model.vNombre)
-                </dd>
 
                 <dt>
                     @Html.DisplayNameFor(model => model.idMarca)
@@ -68,6 +61,14 @@
                 </dd>
 
                 <dt>
+                    @Html.DisplayNameFor(model => model.iMl)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.iMl)
+                </dd>
+
+                <dt>
                     @Html.DisplayNameFor(model => model.Foto_Licor)
                 </dt>
 
@@ -80,10 +81,10 @@
             @using (Html.BeginForm())
             {
                 @Html.AntiForgeryToken()
-
+                @Html.HiddenFor(model => model.idLicor)
                 <div class="form-actions no-color">
                     <input type="submit" value="Delete" class="btn btn-default" /> |
-                    @Html.ActionLink("Back to List", "Index")
+                    @Html.ActionLink("Regresar a la lista", "Index")
                 </div>
             }
         </div>

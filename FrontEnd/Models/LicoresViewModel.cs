@@ -13,9 +13,6 @@ namespace FrontEnd.Models
         [Key]
         public int idLicor { get; set; }
 
-        [Display(Name = "Nombre")]
-        public string vNombre { get; set; }
-
         [Display(Name = "Marca")]
         public int idMarca { get; set; }
 
@@ -46,13 +43,19 @@ namespace FrontEnd.Models
         [Display(Name = "Descripción")]
         public string vDescripción { get; set; }
 
-        [Display(Name = "Unidades Disponibles")]
+        [Display(Name = "U. Disp.")]
         public int iUnidades { get; set; }
 
         [Display(Name = "Precio")]
         public int iPrecio { get; set; }
 
         [Display(Name = "Foto")]
+        public HttpPostedFileBase Foto { get; set; }
+
+        [Display(Name = "Foto")]
         public string Foto_Licor { get; set; }
+
+        [Display(Name = "Ml")]
+        public int iMl { get; set; }
     }
 }
