@@ -5,7 +5,6 @@
       <PropertyRef Name="idLicor" />
     </Key>
     <Property Name="idLicor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="vNombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="idMarca" Type="Int32" Nullable="false" />
     <Property Name="idTipo" Type="Int32" Nullable="false" />
     <Property Name="idProveedor" Type="Int32" Nullable="false" />
@@ -16,6 +15,7 @@
     <NavigationProperty Name="Marcas" Relationship="Self.FK__Licores__idMarca__2F10007B" FromRole="Licores" ToRole="Marcas" />
     <NavigationProperty Name="Proveedores" Relationship="Self.FK__Licores__idProve__30F848ED" FromRole="Licores" ToRole="Proveedores" />
     <NavigationProperty Name="Tipos" Relationship="Self.FK__Licores__idTipo__300424B4" FromRole="Licores" ToRole="Tipos" />
+    <Property Name="iMl" Type="Int32" />
   </EntityType>
   <EntityType Name="Marcas">
     <Key>

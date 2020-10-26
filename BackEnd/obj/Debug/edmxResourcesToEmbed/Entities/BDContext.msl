@@ -4,8 +4,8 @@
     <EntitySetMapping Name="Licores">
       <EntityTypeMapping TypeName="LicoreraModel.Licores">
         <MappingFragment StoreEntitySet="Licores">
+          <ScalarProperty Name="iMl" ColumnName="iMl" />
           <ScalarProperty Name="idLicor" ColumnName="idLicor" />
-          <ScalarProperty Name="vNombre" ColumnName="vNombre" />
           <ScalarProperty Name="idMarca" ColumnName="idMarca" />
           <ScalarProperty Name="idTipo" ColumnName="idTipo" />
           <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />
