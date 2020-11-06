@@ -3,76 +3,97 @@
 @{
     ViewBag.Title = "Licorera El Alto";
 }
-<div class="container">
-    <h2>Licorera El Alto</h2>
+    <div class="container">
+        <h2>Licorera El Alto</h2>
+        <div class="d-flex">
+            <input class="form-control" id="myInput" type="text" placeholder="Buscar..">
 
-    <p>
-        @Html.ActionLink("Agregar Licor", "Create")
-    </p>
-    <table class="table">
-        <tr>
-            <th class="text-center">
-                @Html.DisplayNameFor(model => model.idMarca)
-            </th>
-            <th class="text-center">
-                @Html.DisplayNameFor(model => model.idTipo)
-            </th>
-            <th class="text-center">
-                @Html.DisplayNameFor(model => model.idProveedor)
-            </th>
-            <th class="text-center">
-                @Html.DisplayNameFor(model => model.vDescripción)
-            </th>
-            <th class="text-center">
-                @Html.DisplayNameFor(model => model.iUnidades)
-            </th>
-            <th class="text-center">
-                @Html.DisplayNameFor(model => model.iPrecio)
-            </th>
-            <th class="text-center">
-                @Html.DisplayNameFor(model => model.iMl)
-            </th>
-            <th class="text-center">
-                @Html.DisplayNameFor(model => model.Foto_Licor)
-            </th>
-            <th></th>
-        </tr>
-
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td class="align-middle">
-                    @Html.DisplayFor(modelItem => item.marca.vNombre)
-                </td>
-                <td class="align-middle">
-                    @Html.DisplayFor(modelItem => item.tipo.vNombre)
-                </td>
-                <td class="align-middle">
-                    @Html.DisplayFor(modelItem => item.proveedor.vNombre)
-                </td>
-                <td class="align-middle">
-                    @Html.DisplayFor(modelItem => item.vDescripción)
-                </td>
-                <td class="align-middle">
-                    @Html.DisplayFor(modelItem => item.iUnidades)
-                </td>
-                <td class="align-middle">
-                    @Html.DisplayFor(modelItem => item.iPrecio)
-                </td>
-                <td class="align-middle">
-                    @Html.DisplayFor(modelItem => item.iMl) ml
-                </td>
-                <td class="align-middle">
-                    @{ var imgSrc = String.Format("data:image/jpg;base64,{0}", item.Foto_Licor);}
-                    <img style="width:100px;height:200px" src="@imgSrc" alt="Foto Licor" />
-                </td>
-                <td class="align-middle">
-                    @Html.ActionLink("Editar", "Edit", new { id = item.idLicor }) |
-                    @Html.ActionLink("Detalles", "Details", new { id = item.idLicor }) |
-                    @Html.ActionLink("Eliminar", "Delete", new { id = item.idLicor })
-                </td>
-            </tr>
-        }
-
-    </table>
-</div>
+            <a class="ml-2 btn btn-success" href="@Url.Content("~/Licores/Create")">
+                <i class="far fa-plus-square"></i>
+                <span>Agregar Licor</span>
+            </a>
+        </div>
+        <br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.idMarca)
+                    </th>
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.idTipo)
+                    </th>
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.idProveedor)
+                    </th>
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.vDescripción)
+                    </th>
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.iUnidades)
+                    </th>
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.iPrecio)
+                    </th>
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.iMl)
+                    </th>
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.Foto_Licor)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="align-middle">
+                            @Html.DisplayFor(modelItem => item.marca.vNombre)
+                        </td>
+                        <td class="align-middle">
+                            @Html.DisplayFor(modelItem => item.tipo.vNombre)
+                        </td>
+                        <td class="align-middle">
+                            @Html.DisplayFor(modelItem => item.proveedor.vNombre)
+                        </td>
+                        <td class="align-middle">
+                            @Html.DisplayFor(modelItem => item.vDescripción)
+                        </td>
+                        <td class="align-middle">
+                            @Html.DisplayFor(modelItem => item.iUnidades)
+                        </td>
+                        <td class="align-middle">
+                            @Html.DisplayFor(modelItem => item.iPrecio)
+                        </td>
+                        <td class="align-middle">
+                            @Html.DisplayFor(modelItem => item.iMl) ml
+                        </td>
+                        <td class="align-middle">
+                            <figure class="figure">
+                                @{ var imgSrc = String.Format("data:image/jpg;base64,{0}", item.Foto_Licor);}
+                                <img style="height:200px" src="@imgSrc" class="figure-img img-fluid rounded" alt="...">
+                            </figure>
+                        </td>
+                        <td class="align-middle">
+                            @Html.ActionLink("Editar", "Edit", new { id = item.idLicor }) |
+                            @Html.ActionLink("Detalles", "Details", new { id = item.idLicor }) |
+                            @Html.ActionLink("Eliminar", "Delete", new { id = item.idLicor })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+}
