@@ -159,20 +159,29 @@ namespace FrontEnd.Controllers
         [HttpPost]
         public ActionResult Edit(LicoresViewModel licorViewModel)
         {
-            byte[] img = null;
-            using (var binary = new System.IO.BinaryReader(licorViewModel.Foto.InputStream))
+            if (licorViewModel.Foto != null)
             {
-                img = binary.ReadBytes(licorViewModel.Foto.ContentLength);
-            }
-            string archivoBase64 = System.Convert.ToBase64String(img);
-            licorViewModel.Foto_Licor = archivoBase64;
+                byte[] img = null;
+                using (var binary = new System.IO.BinaryReader(licorViewModel.Foto.InputStream))
+                {
+                    img = binary.ReadBytes(licorViewModel.Foto.ContentLength); 
+                }
+                string archivoBase64 = System.Convert.ToBase64String(img);
+                licorViewModel.Foto_Licor = archivoBase64;
 
-            using (UnidadDeTrabajo<Licores> unidad = new UnidadDeTrabajo<Licores>(new BDContext()))
-            {
-                unidad.genericDAL.Update(this.Convertir(licorViewModel));
-                unidad.Complete();
+                using (UnidadDeTrabajo<Licores> unidad = new UnidadDeTrabajo<Licores>(new BDContext()))
+                {
+                    unidad.genericDAL.Update(this.Convertir(licorViewModel));
+                    unidad.Complete();
+                }
             }
-
+            else {
+                using (UnidadDeTrabajo<Licores> unidad = new UnidadDeTrabajo<Licores>(new BDContext()))
+                {
+                    unidad.genericDAL.Update(this.Convertir(licorViewModel));
+                    unidad.Complete();
+                }
+            }
             return RedirectToAction("Index");
         }
 
