@@ -72,7 +72,12 @@
                 </dt>
 
                 <dd>
-                    @Html.DisplayFor(model => model.Foto_Licor)
+                    <figure class="figure">
+                        @{ var imgSrc = String.Format("data:image/jpg;base64,{0}", Model.Foto_Licor);}
+                        <img style="height:200px" src="@imgSrc" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption">Fotografía actual</figcaption>
+                    </figure>
+                    
                 </dd>
 
             </dl>
