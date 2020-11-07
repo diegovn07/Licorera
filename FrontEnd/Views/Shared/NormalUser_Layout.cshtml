@@ -29,7 +29,7 @@
                 </li>
             </ul>
             <!-- Navbar-->
-            <div><a class="btn btn-outline-secondary" href="@Url.Content("~/Licores/Create")">
+            <div><a class="btn btn-outline-secondary" href="@Url.Content("~/Licores/Index")">
                 <i class="fas fa-user"></i>
                 <span>Iniciar Sesión</span>
             </a></div>
@@ -44,7 +44,9 @@
                     Realizar Pedido
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="login.html">Cancelar Todo</a>
+                <a class="dropdown-item" href="@Url.Content("~/Home/Index")">
+                    Cancelar Todo
+                </a>
             </div>
         </li>
     </ul>
