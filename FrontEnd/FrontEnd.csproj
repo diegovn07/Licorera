@@ -129,18 +129,34 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CarritoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LicoresController.cs" />
     <Compile Include="Controllers\MarcasController.cs" />
+    <Compile Include="Controllers\PedidosController.cs" />
     <Compile Include="Controllers\ProveedoresController.cs" />
+    <Compile Include="Controllers\ReportesController.cs" />
+    <Compile Include="Controllers\RolesController.cs" />
     <Compile Include="Controllers\TiposController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CarritoItemViewModel.cs" />
+    <Compile Include="Models\CustomRoleProvider.cs" />
+    <Compile Include="Models\DetallePedidoViewModel.cs" />
+    <Compile Include="Models\licoresTiendaViewModel.cs" />
     <Compile Include="Models\LicoresViewModel.cs" />
     <Compile Include="Models\MarcasViewModel.cs" />
+    <Compile Include="Models\PedidosViewModel.cs" />
     <Compile Include="Models\ProveedoresViewModel.cs" />
+    <Compile Include="Models\reporteViewModel.cs" />
+    <Compile Include="Models\RolesViewModel.cs" />
     <Compile Include="Models\TiposViewModel.cs" />
+    <Compile Include="Models\UserViewModel.cs" />
+    <Compile Include="Models\ViewModel\pedidosFilterViewModel.cs" />
+    <Compile Include="Models\ViewModel\RecoveryModel.cs" />
+    <Compile Include="Models\ViewModel\RecoveryPasswordViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -154,8 +170,12 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Media\amex.svg" />
     <Content Include="Media\carrusel1.jpg" />
     <Content Include="Media\carrusel2.jpg" />
+    <Content Include="Media\mastercard.svg" />
+    <Content Include="Media\paypal.png" />
+    <Content Include="Media\visa.svg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -309,6 +329,35 @@
     <Content Include="Views\Proveedores\Delete.cshtml" />
     <Content Include="Views\Shared\NormalUser_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Details.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\Carrito\Index.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\User\Create.cshtml" />
+    <Content Include="Views\User\Edit.cshtml" />
+    <Content Include="Views\User\Delete.cshtml" />
+    <Content Include="Views\Roles\Index.cshtml" />
+    <Content Include="Views\Roles\Create.cshtml" />
+    <Content Include="Views\Roles\Edit.cshtml" />
+    <Content Include="Views\Roles\Delete.cshtml" />
+    <Content Include="Views\User\Details.cshtml" />
+    <Content Include="Views\Pedidos\userConfirmData.cshtml" />
+    <Content Include="Views\Pedidos\thanksPage.cshtml" />
+    <Content Include="Views\Pedidos\Create.cshtml" />
+    <Content Include="Views\Pedidos\Edit.cshtml" />
+    <Content Include="Views\Pedidos\Details.cshtml" />
+    <Content Include="Views\Pedidos\Delete.cshtml" />
+    <Content Include="Views\Pedidos\sorryPage.cshtml" />
+    <Content Include="Views\User\StartRecovery.cshtml" />
+    <Content Include="Views\User\Recovery.cshtml" />
+    <Content Include="Views\User\RecuperaExito.cshtml" />
+    <Content Include="Views\Pedidos\Index.cshtml" />
+    <Content Include="Views\Pedidos\pedidosPartial.cshtml" />
+    <Content Include="Views\Reportes\Index.cshtml" />
+    <Content Include="Views\Reportes\reportePartial.cshtml" />
+    <Content Include="Views\Home\licoresPartial.cshtml" />
+    <Content Include="Views\User\CreadoExito.cshtml" />
+    <Content Include="Views\User\CreateNoUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

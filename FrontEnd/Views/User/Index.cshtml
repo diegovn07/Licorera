@@ -1,0 +1,70 @@
+﻿@model IEnumerable<FrontEnd.Models.UserViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <div class="container">
+        <h2>Usuarios</h2>
+
+        <div class="d-flex">
+            <input class="form-control" id="myInput" type="text" placeholder="Buscar..">
+
+            <a class="ml-2 btn btn-success" href="@Url.Content("~/User/Create")">
+                <i class="far fa-plus-square"></i>
+                <span>Agregar Usuario</span>
+            </a>
+        </div>
+        <br>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.nombre)
+                </th>
+                <th>
+                    <p>Apellidos</p>
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Correo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.telefono)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.cedula)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.apellido1) @Html.DisplayFor(modelItem => item.apellido2)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Correo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.telefono)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Editar", "Edit", new { id = item.UserId }) |
+                        @Html.ActionLink("Eliminar", "Delete", new { id = item.UserId }) |
+                        @Html.ActionLink("Detalles", "Details", new { id = item.UserId }) |
+
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>

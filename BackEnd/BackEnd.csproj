@@ -50,9 +50,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\CryptoEngine.cs" />
     <Compile Include="DAL\DALGenericoImpl.cs" />
     <Compile Include="DAL\IDALGenerico.cs" />
+    <Compile Include="DAL\IUserDAL.cs" />
+    <Compile Include="DAL\PedidosDALImpl.cs" />
     <Compile Include="DAL\UnidadDeTrabajo.cs" />
+    <Compile Include="DAL\UserDALImpl.cs" />
     <Compile Include="Entities\BDContext.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -68,16 +72,40 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BDContext.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Entities\Detalles_Pedido.cs">
+      <DependentUpon>BDContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\estados_Pedido.cs">
+      <DependentUpon>BDContext.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Licores.cs">
       <DependentUpon>BDContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\Marcas.cs">
       <DependentUpon>BDContext.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entities\medios_Pago.cs">
+      <DependentUpon>BDContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\paginarLicoresProc_Result.cs">
+      <DependentUpon>BDContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\paginarLicores_Result.cs">
+      <DependentUpon>BDContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Pedidos.cs">
+      <DependentUpon>BDContext.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Proveedores.cs">
       <DependentUpon>BDContext.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entities\Roles.cs">
+      <DependentUpon>BDContext.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Tipos.cs">
+      <DependentUpon>BDContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Users.cs">
       <DependentUpon>BDContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />

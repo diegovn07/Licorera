@@ -1,5 +1,100 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="LicoreraModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BDContext" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="sp_getRolesForUser" ReturnType="Collection(String)">
+      <Parameter Name="userName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_getUsuarioRole" ReturnType="Collection(String)">
+      <Parameter Name="roleName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_isUserInRole" ReturnType="Collection(Boolean)">
+      <Parameter Name="userName" Mode="In" Type="String" />
+      <Parameter Name="roleName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_getUsuariosRole" ReturnType="Collection(String)">
+      <Parameter Name="roleName" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CreaUsuarioRol">
+      <Parameter Name="IdUsuario" Mode="In" Type="Int32" />
+      <Parameter Name="IdRol" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EliminaUsuarioRol">
+      <Parameter Name="IdUsuario" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="Detalles_Pedido" EntityType="LicoreraModel.Detalles_Pedido" />
+    <EntitySet Name="estados_Pedido" EntityType="LicoreraModel.estados_Pedido" />
+    <EntitySet Name="Licores" EntityType="LicoreraModel.Licores" />
+    <EntitySet Name="Marcas" EntityType="LicoreraModel.Marcas" />
+    <EntitySet Name="medios_Pago" EntityType="LicoreraModel.medios_Pago" />
+    <EntitySet Name="Pedidos" EntityType="LicoreraModel.Pedidos" />
+    <EntitySet Name="Proveedores" EntityType="LicoreraModel.Proveedores" />
+    <EntitySet Name="Roles" EntityType="LicoreraModel.Roles" />
+    <EntitySet Name="Tipos" EntityType="LicoreraModel.Tipos" />
+    <EntitySet Name="Users" EntityType="LicoreraModel.Users" />
+    <AssociationSet Name="FK__Detalles___idLic__2BFE89A6" Association="LicoreraModel.FK__Detalles___idLic__2BFE89A6">
+      <End Role="Licores" EntitySet="Licores" />
+      <End Role="Detalles_Pedido" EntitySet="Detalles_Pedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Detalles___idPed__2CF2ADDF" Association="LicoreraModel.FK__Detalles___idPed__2CF2ADDF">
+      <End Role="Pedidos" EntitySet="Pedidos" />
+      <End Role="Detalles_Pedido" EntitySet="Detalles_Pedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Pedidos__idEstad__282DF8C2" Association="LicoreraModel.FK__Pedidos__idEstad__282DF8C2">
+      <End Role="estados_Pedido" EntitySet="estados_Pedido" />
+      <End Role="Pedidos" EntitySet="Pedidos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Licores__idMarca__2F10007B" Association="LicoreraModel.FK__Licores__idMarca__2F10007B">
+      <End Role="Marcas" EntitySet="Marcas" />
+      <End Role="Licores" EntitySet="Licores" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Licores__idProve__30F848ED" Association="LicoreraModel.FK__Licores__idProve__30F848ED">
+      <End Role="Proveedores" EntitySet="Proveedores" />
+      <End Role="Licores" EntitySet="Licores" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Licores__idTipo__300424B4" Association="LicoreraModel.FK__Licores__idTipo__300424B4">
+      <End Role="Tipos" EntitySet="Tipos" />
+      <End Role="Licores" EntitySet="Licores" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Pedidos__idMedio__29221CFB" Association="LicoreraModel.FK__Pedidos__idMedio__29221CFB">
+      <End Role="medios_Pago" EntitySet="medios_Pago" />
+      <End Role="Pedidos" EntitySet="Pedidos" />
+    </AssociationSet>
+    <AssociationSet Name="UsersInRoles" Association="LicoreraModel.UsersInRoles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <FunctionImport Name="paginarLicores" IsComposable="true" ReturnType="Collection(LicoreraModel.paginarLicores_Result)">
+      <Parameter Name="pagina" Mode="In" Type="Int32" />
+      <Parameter Name="cantidadReg" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paginarLicoresProc" ReturnType="Collection(LicoreraModel.paginarLicoresProc_Result)">
+      <Parameter Name="pagina" Mode="In" Type="Int32" />
+      <Parameter Name="cantidadReg" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_getUsuarioRole1">
+      <Parameter Name="roleName" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="Detalles_Pedido">
+    <Key>
+      <PropertyRef Name="idDetalle" />
+    </Key>
+    <Property Name="idDetalle" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idPedido" Type="Int32" Nullable="false" />
+    <Property Name="idLicor" Type="Int32" Nullable="false" />
+    <Property Name="iPrecio" Type="Int32" Nullable="false" />
+    <Property Name="iCantidad" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Licores" Relationship="LicoreraModel.FK__Detalles___idLic__2BFE89A6" FromRole="Detalles_Pedido" ToRole="Licores" />
+    <NavigationProperty Name="Pedidos" Relationship="LicoreraModel.FK__Detalles___idPed__2CF2ADDF" FromRole="Detalles_Pedido" ToRole="Pedidos" />
+  </EntityType>
+  <EntityType Name="estados_Pedido">
+    <Key>
+      <PropertyRef Name="idEstado" />
+    </Key>
+    <Property Name="idEstado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vNombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Pedidos" Relationship="LicoreraModel.FK__Pedidos__idEstad__282DF8C2" FromRole="estados_Pedido" ToRole="Pedidos" />
+  </EntityType>
   <EntityType Name="Licores">
     <Key>
       <PropertyRef Name="idLicor" />
@@ -12,42 +107,132 @@
     <Property Name="iUnidades" Type="Int32" Nullable="false" />
     <Property Name="iPrecio" Type="Int32" Nullable="false" />
     <Property Name="Foto_Licor" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="Marcas" Relationship="Self.FK__Licores__idMarca__2F10007B" FromRole="Licores" ToRole="Marcas" />
-    <NavigationProperty Name="Proveedores" Relationship="Self.FK__Licores__idProve__30F848ED" FromRole="Licores" ToRole="Proveedores" />
-    <NavigationProperty Name="Tipos" Relationship="Self.FK__Licores__idTipo__300424B4" FromRole="Licores" ToRole="Tipos" />
     <Property Name="iMl" Type="Int32" />
+    <Property Name="Foto_Detalles" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Detalles_Pedido" Relationship="LicoreraModel.FK__Detalles___idLic__2BFE89A6" FromRole="Licores" ToRole="Detalles_Pedido" />
+    <NavigationProperty Name="Marcas" Relationship="LicoreraModel.FK__Licores__idMarca__2F10007B" FromRole="Licores" ToRole="Marcas" />
+    <NavigationProperty Name="Proveedores" Relationship="LicoreraModel.FK__Licores__idProve__30F848ED" FromRole="Licores" ToRole="Proveedores" />
+    <NavigationProperty Name="Tipos" Relationship="LicoreraModel.FK__Licores__idTipo__300424B4" FromRole="Licores" ToRole="Tipos" />
   </EntityType>
   <EntityType Name="Marcas">
     <Key>
       <PropertyRef Name="idMarca" />
     </Key>
     <Property Name="idMarca" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="vNombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="Licores" Relationship="Self.FK__Licores__idMarca__2F10007B" FromRole="Marcas" ToRole="Licores" />
+    <Property Name="vNombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Licores" Relationship="LicoreraModel.FK__Licores__idMarca__2F10007B" FromRole="Marcas" ToRole="Licores" />
+  </EntityType>
+  <EntityType Name="medios_Pago">
+    <Key>
+      <PropertyRef Name="idMedio" />
+    </Key>
+    <Property Name="idMedio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vNombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Pedidos" Relationship="LicoreraModel.FK__Pedidos__idMedio__29221CFB" FromRole="medios_Pago" ToRole="Pedidos" />
+  </EntityType>
+  <EntityType Name="Pedidos">
+    <Key>
+      <PropertyRef Name="idPedido" />
+    </Key>
+    <Property Name="idPedido" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vNombre_Cliente" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vTelefono" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="vEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vDireccion_Envio" Type="String" Nullable="false" MaxLength="800" FixedLength="false" Unicode="false" />
+    <Property Name="dFecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="idEstado_Pedido" Type="Int32" />
+    <Property Name="idMedio_Pago" Type="Int32" />
+    <Property Name="bEstado_Pago" Type="Boolean" Nullable="false" />
+    <Property Name="identificacion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Detalles_Pedido" Relationship="LicoreraModel.FK__Detalles___idPed__2CF2ADDF" FromRole="Pedidos" ToRole="Detalles_Pedido" />
+    <NavigationProperty Name="estados_Pedido" Relationship="LicoreraModel.FK__Pedidos__idEstad__282DF8C2" FromRole="Pedidos" ToRole="estados_Pedido" />
+    <NavigationProperty Name="medios_Pago" Relationship="LicoreraModel.FK__Pedidos__idMedio__29221CFB" FromRole="Pedidos" ToRole="medios_Pago" />
   </EntityType>
   <EntityType Name="Proveedores">
     <Key>
       <PropertyRef Name="idProveedor" />
     </Key>
     <Property Name="idProveedor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="vNombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="vNombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
     <Property Name="iCedula" Type="Int32" Nullable="false" />
     <Property Name="iTelefono" Type="Int32" Nullable="false" />
-    <Property Name="vCorreo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="vDireccion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="Licores" Relationship="Self.FK__Licores__idProve__30F848ED" FromRole="Proveedores" ToRole="Licores" />
+    <Property Name="vCorreo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vDireccion" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Licores" Relationship="LicoreraModel.FK__Licores__idProve__30F848ED" FromRole="Proveedores" ToRole="Licores" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreRol" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="LicoreraModel.UsersInRoles" FromRole="Roles" ToRole="Users" />
   </EntityType>
   <EntityType Name="Tipos">
     <Key>
       <PropertyRef Name="idTipo" />
     </Key>
     <Property Name="idTipo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="vNombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="Licores" Relationship="Self.FK__Licores__idTipo__300424B4" FromRole="Tipos" ToRole="Licores" />
+    <Property Name="vNombre" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Licores" Relationship="LicoreraModel.FK__Licores__idTipo__300424B4" FromRole="Tipos" ToRole="Licores" />
   </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="cedula" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="apellido1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="apellido2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Correo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="direccion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="telefono" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="telefono2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="token_recovery" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Roles" Relationship="LicoreraModel.UsersInRoles" FromRole="Users" ToRole="Roles" />
+  </EntityType>
+  <Association Name="FK__Detalles___idLic__2BFE89A6">
+    <End Type="LicoreraModel.Licores" Role="Licores" Multiplicity="1" />
+    <End Type="LicoreraModel.Detalles_Pedido" Role="Detalles_Pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Licores">
+        <PropertyRef Name="idLicor" />
+      </Principal>
+      <Dependent Role="Detalles_Pedido">
+        <PropertyRef Name="idLicor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Detalles___idPed__2CF2ADDF">
+    <End Type="LicoreraModel.Pedidos" Role="Pedidos" Multiplicity="1" />
+    <End Type="LicoreraModel.Detalles_Pedido" Role="Detalles_Pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pedidos">
+        <PropertyRef Name="idPedido" />
+      </Principal>
+      <Dependent Role="Detalles_Pedido">
+        <PropertyRef Name="idPedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Pedidos__idEstad__282DF8C2">
+    <End Type="LicoreraModel.estados_Pedido" Role="estados_Pedido" Multiplicity="0..1" />
+    <End Type="LicoreraModel.Pedidos" Role="Pedidos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estados_Pedido">
+        <PropertyRef Name="idEstado" />
+      </Principal>
+      <Dependent Role="Pedidos">
+        <PropertyRef Name="idEstado_Pedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK__Licores__idMarca__2F10007B">
-    <End Role="Marcas" Type="Self.Marcas" Multiplicity="1" />
-    <End Role="Licores" Type="Self.Licores" Multiplicity="*" />
+    <End Type="LicoreraModel.Marcas" Role="Marcas" Multiplicity="1" />
+    <End Type="LicoreraModel.Licores" Role="Licores" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Marcas">
         <PropertyRef Name="idMarca" />
@@ -58,8 +243,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__Licores__idProve__30F848ED">
-    <End Role="Proveedores" Type="Self.Proveedores" Multiplicity="1" />
-    <End Role="Licores" Type="Self.Licores" Multiplicity="*" />
+    <End Type="LicoreraModel.Proveedores" Role="Proveedores" Multiplicity="1" />
+    <End Type="LicoreraModel.Licores" Role="Licores" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Proveedores">
         <PropertyRef Name="idProveedor" />
@@ -70,8 +255,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK__Licores__idTipo__300424B4">
-    <End Role="Tipos" Type="Self.Tipos" Multiplicity="1" />
-    <End Role="Licores" Type="Self.Licores" Multiplicity="*" />
+    <End Type="LicoreraModel.Tipos" Role="Tipos" Multiplicity="1" />
+    <End Type="LicoreraModel.Licores" Role="Licores" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Tipos">
         <PropertyRef Name="idTipo" />
@@ -81,22 +266,43 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="BDContext" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Licores" EntityType="Self.Licores" />
-    <EntitySet Name="Marcas" EntityType="Self.Marcas" />
-    <EntitySet Name="Proveedores" EntityType="Self.Proveedores" />
-    <EntitySet Name="Tipos" EntityType="Self.Tipos" />
-    <AssociationSet Name="FK__Licores__idMarca__2F10007B" Association="Self.FK__Licores__idMarca__2F10007B">
-      <End Role="Marcas" EntitySet="Marcas" />
-      <End Role="Licores" EntitySet="Licores" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Licores__idProve__30F848ED" Association="Self.FK__Licores__idProve__30F848ED">
-      <End Role="Proveedores" EntitySet="Proveedores" />
-      <End Role="Licores" EntitySet="Licores" />
-    </AssociationSet>
-    <AssociationSet Name="FK__Licores__idTipo__300424B4" Association="Self.FK__Licores__idTipo__300424B4">
-      <End Role="Tipos" EntitySet="Tipos" />
-      <End Role="Licores" EntitySet="Licores" />
-    </AssociationSet>
-  </EntityContainer>
+  <Association Name="FK__Pedidos__idMedio__29221CFB">
+    <End Type="LicoreraModel.medios_Pago" Role="medios_Pago" Multiplicity="0..1" />
+    <End Type="LicoreraModel.Pedidos" Role="Pedidos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="medios_Pago">
+        <PropertyRef Name="idMedio" />
+      </Principal>
+      <Dependent Role="Pedidos">
+        <PropertyRef Name="idMedio_Pago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UsersInRoles">
+    <End Type="LicoreraModel.Roles" Role="Roles" Multiplicity="*" />
+    <End Type="LicoreraModel.Users" Role="Users" Multiplicity="*" />
+  </Association>
+  <ComplexType Name="paginarLicores_Result">
+    <Property Type="Int32" Name="idLicor" Nullable="true" />
+    <Property Type="Int32" Name="idMarca" Nullable="true" />
+    <Property Type="Int32" Name="idTipo" Nullable="true" />
+    <Property Type="Int32" Name="idProveedor" Nullable="true" />
+    <Property Type="String" Name="vDescripción" Nullable="true" MaxLength="300" />
+    <Property Type="Int32" Name="iUnidades" Nullable="true" />
+    <Property Type="Int32" Name="iPrecio" Nullable="true" />
+    <Property Type="String" Name="Foto_Licor" Nullable="true" />
+    <Property Type="Int32" Name="iMl" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paginarLicoresProc_Result">
+    <Property Type="Int32" Name="idLicor" Nullable="false" />
+    <Property Type="Int32" Name="idMarca" Nullable="false" />
+    <Property Type="Int32" Name="idTipo" Nullable="false" />
+    <Property Type="Int32" Name="idProveedor" Nullable="false" />
+    <Property Type="String" Name="vDescripción" Nullable="true" MaxLength="300" />
+    <Property Type="Int32" Name="iUnidades" Nullable="false" />
+    <Property Type="Int32" Name="iPrecio" Nullable="false" />
+    <Property Type="String" Name="Foto_Licor" Nullable="true" />
+    <Property Type="Int32" Name="iMl" Nullable="true" />
+    <Property Type="String" Name="Foto_Detalles" Nullable="true" />
+  </ComplexType>
 </Schema>

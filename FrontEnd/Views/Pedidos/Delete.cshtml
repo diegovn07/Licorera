@@ -1,0 +1,99 @@
+﻿@model FrontEnd.Models.PedidosViewModel
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <div class="container-fluid">
+        <h3>Seguro de eliminar este pedido?</h3>
+        <div>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.vNombre_Cliente)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.vNombre_Cliente)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.vTelefono)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.vTelefono)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.vEmail)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.vEmail)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.vDireccion_Envio)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.vDireccion_Envio)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.dFecha)
+                </dt>
+
+                <dd>
+                    @{ string fecha = Model.dFecha.Day.ToString();
+                        fecha = fecha + '/' + Model.dFecha.Month.ToString() + '/' + Model.dFecha.Year.ToString();
+                    }
+                    @fecha
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.idEstado_Pedido)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.estado.vNombre)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.idMedio_Pago)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.medio.vNombre)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.bEstado_Pago)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.bEstado_Pago)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.identificacion)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.identificacion)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(model => model.idPedido)
+                <div class="form-actions no-color">
+                    <input type="submit" value="Eliminar" class="btn btn-warning" /> |
+                    @Html.ActionLink("Volver", "Index", null, new { @class = "btn btn-danger" })
+                </div>
+            }
+        </div>
+    </div>

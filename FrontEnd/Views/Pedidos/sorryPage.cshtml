@@ -1,0 +1,71 @@
+﻿@model IEnumerable<FrontEnd.Models.CarritoItemViewModel>
+
+@{
+    ViewBag.Title = "sorryPage";
+    Layout = "~/Views/Shared/NormalUser_Layout.cshtml";
+}
+
+@{ 
+
+    List<FrontEnd.Models.CarritoItemViewModel> carrito = Session["Carrito"] as List<FrontEnd.Models.CarritoItemViewModel>;
+}
+ <div class="container mt-3">
+    <h2>Lo Sentimos, no contamos con las unidades solicitadas de los siguientes productos:</h2>
+
+    <table class="table">
+        <tr>
+            <th>
+                Marca
+            </th>
+            <th>
+                Tipo
+            </th>
+            <th>
+                Precio
+            </th>
+            <th>
+                Foto
+            </th>
+            <th>
+                Tamaño
+            </th>
+            <th>
+                Cantidad Solicitada
+            </th>
+            <th></th>
+        </tr>
+
+    @foreach (var item in carrito) {
+        if (!item.disponibilidad) { 
+            <tr>
+                <td class="align-middle">
+                    @item.marca
+                </td>
+                <td class="align-middle">
+                    @item.tipo
+                </td>
+                <td class="align-middle">
+                    @item.iPrecio
+                </td>
+                <td>
+                        <div>
+                            @{ var imgSrc = String.Format("data:image/jpg;base64,{0}", item.Foto_Licor);}
+                            <img class="img-thumbnail" style="height:200px;width:200px"
+                                 src="@imgSrc" alt="Sample">
+                        </div>
+                </td>
+                <td class="align-middle">
+                    @item.iMl
+                </td>
+                <td class="align-middle">
+                    @item.cantidad
+                </td>
+                <td class="align-middle">
+                    @Html.ActionLink("Eliminar del Carrito", "Delete", new { id=item.idLicor })
+                </td>
+            </tr>
+        }
+    }
+
+    </table>
+ </div>

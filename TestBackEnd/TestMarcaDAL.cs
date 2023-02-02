@@ -34,7 +34,7 @@ namespace TestBackEnd
         {
             using (unidad = new UnidadDeTrabajo<Marcas>(new BDContext()))
             {
-                Marcas marca = unidad.genericDAL.Get(1);
+                Marcas marca = unidad.genericDAL.Get(3);
                 marca.vNombre = "Prueba TestCase";
                 unidad.genericDAL.Update(marca);
                 Assert.AreEqual(true, unidad.Complete());
@@ -46,7 +46,7 @@ namespace TestBackEnd
         {
             Marcas marca = new Marcas
             {
-                idMarca = 2
+                idMarca = 1003
             };
             using (unidad = new UnidadDeTrabajo<Marcas>(new BDContext()))
             {

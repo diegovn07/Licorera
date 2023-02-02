@@ -55,7 +55,15 @@ namespace FrontEnd.Models
         [Display(Name = "Foto")]
         public string Foto_Licor { get; set; }
 
+        [Display(Name = "Foto Detalle")]
+        public HttpPostedFileBase Foto_Det { get; set; }
+
+        [Display(Name = "Foto Detalle")]
+        public string Foto_Detalles { get; set; }
+
         [Display(Name = "Ml")]
         public int iMl { get; set; }
+
+        public int cantidad { get; set; }
     }
 }

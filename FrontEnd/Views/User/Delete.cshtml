@@ -1,0 +1,105 @@
+﻿@model FrontEnd.Models.UserViewModel
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="container">
+        <h3>Elimar usuario</h3>
+        <div>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.UserName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.UserName)
+                </dd>
+
+                @*<dt>
+                    @Html.DisplayNameFor(model => model.Password)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Password)
+                </dd>*@
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.cedula)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.cedula)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.nombre)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.nombre)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.apellido1)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.apellido1)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.apellido2)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.apellido2)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Correo)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Correo)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.direccion)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.direccion)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.telefono)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.telefono)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.telefono2)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.telefono2)
+                </dd>
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(model => model.UserId)
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Elminar" class="btn btn-danger" /> |
+                    @Html.ActionLink("Regresar", "Index")
+                </div>
+            }
+        </div>
+    </div>

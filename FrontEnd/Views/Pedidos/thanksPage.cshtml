@@ -1,0 +1,112 @@
+﻿@model FrontEnd.Models.PedidosViewModel
+
+@{
+    ViewBag.Title = "thanksPage";
+    Layout = "~/Views/Shared/NormalUser_Layout.cshtml";
+}
+
+    <div class="container mt-3">
+        <div class="text-center">
+            <h2>Gracias por comprar con nosotros</h2>
+            <h4>Estos son los datos de su pedido</h4>
+        </div>
+
+
+        <div>
+
+            <hr />
+
+            <div class="card wish-list pb-1">
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">@Html.DisplayNameFor(model => model.vNombre_Cliente) </th>
+                                <td>@Html.DisplayFor(model => model.vNombre_Cliente)</td>
+                                <td><b> @Html.DisplayNameFor(model => model.vTelefono)</b></td>
+                                <td>@Html.DisplayFor(model => model.vTelefono)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">@Html.DisplayNameFor(model => model.vEmail)</th>
+                                <td>@Html.DisplayFor(model => model.vEmail)</td>
+                                <td><b> @Html.DisplayNameFor(model => model.vDireccion_Envio)</b> </td>
+                                <td>@Html.DisplayFor(model => model.vDireccion_Envio)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">@Html.DisplayNameFor(model => model.dFecha)</th>
+                                <td>@Html.DisplayFor(model => model.dFecha)</td>
+                                <td><b> @Html.DisplayNameFor(model => model.idEstado_Pedido)</b> </td>
+                                <td>@Html.DisplayFor(model => model.estado.vNombre)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">@Html.DisplayNameFor(model => model.idMedio_Pago)</th>
+                                <td> @Html.DisplayFor(model => model.medio.vNombre)</td>
+                                <td><b> @Html.DisplayNameFor(model => model.bEstado_Pago)</b> </td>
+                                <td>
+                                    @if (Model.bEstado_Pago)
+                                    {
+                                        <p>Pagada</p>
+                                    }
+                                    else
+                                    {
+                                        <p>Pendiente</p>
+                                    }
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">@Html.DisplayNameFor(model => model.identificacion)</th>
+                                <td>@Html.DisplayFor(model => model.identificacion)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Número de Pedido</th>
+                                <th scope="col">Detalle</th>
+                                <th scope="col">Precio Unitario</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                var totalFinal = 0;
+                                foreach (var item in Model.lineas)
+                                {
+                                    <tr>
+                                        <th scope="row">@item.idPedido</th>
+                                        <td>@item.licor.tipo.vNombre - @item.licor.marca.vNombre</td>
+                                        <td>@item.iPrecio</td>
+                                        <td>@item.iCantidad</td>
+                                        <td>₡@(item.iCantidad * item.iPrecio)</td>
+                                    </tr>
+                                    totalFinal = totalFinal + (item.iCantidad * item.iPrecio);
+                                }
+                            }
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <th scope="row">Total Final</th>
+                                <td>@totalFinal</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,7 +1,152 @@
 ﻿@{
     ViewBag.Title = "About";
+    Layout = "~/Views/Shared/NormalUser_Layout.cshtml";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
 
-<p>Use this area to provide additional information.</p>
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    .column {
+        float: left;
+        width: 20%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+    }
+
+    .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+        .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+    .title {
+        color: grey;
+    }
+
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+
+        .button:hover {
+            background-color: #555;
+        }
+    }
+</style>
+<div class="about-section">
+    <h1>Nosotros</h1>
+    <p>Breve desc de nosotros como team/local</p>
+</div>
+<br />
+
+<h2 style="text-align:center">Equipo de trabajo</h2>
+<br />
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <br />
+            <center><img src="https://www.pngkey.com/png/full/22-223848_businessman-vector-person-logo-png.png" alt="Jane" style="width:50%"></center>
+            <br />
+            <div class="container">
+                <h2>Luis Diego Valverde</h2>
+                <p class="title">Puesto</p>
+                <p>Breve desc de cada uno</p>
+                <p>lvalverde40214@ufide.ac.cr</p>
+                <p><button class="button">Contacto</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <br />
+            <center><img src="https://www.pngkey.com/png/full/22-223848_businessman-vector-person-logo-png.png" alt="Mike" style="width:50%"></center>
+            <br />
+            <div class="container">
+                <h2>Fabián Sánchez</h2>
+                <p class="title">Puesto</p>
+                <p>Breve desc de cada uno</p>
+                <p>esanchez40887@ufide.ac.cr</p>
+                <p><button class="button">Contacto</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <br />
+            <center><img src="https://www.pngkey.com/png/full/22-223848_businessman-vector-person-logo-png.png" alt="John" style="width:50%"></center>
+            <br />
+            <div class="container">
+                <h2>Daniel Sarmiento</h2>
+                <p class="title">Puesto</p>
+                <p>Breve desc de cada uno</p>
+                <p>jsarmiento60008@ufide.ac.cr</p>
+                <p><button class="button">Contacto</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <br />
+            <center><img src="https://www.pngkey.com/png/full/22-223848_businessman-vector-person-logo-png.png" alt="Mike" style="width:50%"></center>
+            <br />
+            <div class="container">
+                <h2>Jordan Larios</h2>
+                <p class="title">Puesto</p>
+                <p>Breve desc de cada uno</p>
+                <p>jlarios90580@ufide.ac.cr</p>
+                <p><button class="button">Contacto</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <br />
+            <center><img src="https://www.pngkey.com/png/full/22-223848_businessman-vector-person-logo-png.png" alt="John" style="width:50%"></center>
+            <br />
+            <div class="container">
+                <h2>Karian Cascante</h2>
+                <p class="title">Puesto</p>
+                <p>Breve desc de cada uno</p>
+                <p>kcascante70653@ufide.ac.cr</p>
+                <p><button class="button">Contacto</button></p>
+            </div>
+        </div>
+    </div>
+</div>

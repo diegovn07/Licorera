@@ -17,7 +17,7 @@
                 </dt>
 
                 <dd>
-                    @Html.DisplayFor(model => model.idMarca)
+                    @Html.DisplayFor(model => model.marca.vNombre)
                 </dd>
 
                 <dt>
@@ -25,7 +25,7 @@
                 </dt>
 
                 <dd>
-                    @Html.DisplayFor(model => model.idTipo)
+                    @Html.DisplayFor(model => model.tipo.vNombre)
                 </dd>
 
                 <dt>
@@ -33,7 +33,7 @@
                 </dt>
 
                 <dd>
-                    @Html.DisplayFor(model => model.idProveedor)
+                    @Html.DisplayFor(model => model.proveedor.vNombre)
                 </dd>
 
                 <dt>
@@ -78,7 +78,7 @@
                         <img style="height:200px" src="@imgSrc" class="figure-img img-fluid rounded" alt="...">
                         <figcaption class="figure-caption">Fotografía actual</figcaption>
                     </figure>
-                    
+
                 </dd>
 
             </dl>
@@ -88,8 +88,8 @@
                 @Html.AntiForgeryToken()
                 @Html.HiddenFor(model => model.idLicor)
                 <div class="form-actions no-color">
-                    <input type="submit" value="Delete" class="btn btn-default" /> |
-                    @Html.ActionLink("Regresar a la lista", "Index")
+                    <input type="submit" value="Eliminar" class="btn btn-default btn-warning" /> |
+                    @Html.ActionLink("Regresar a la lista", "Index", null, new { @class = "btn btn-danger" })
                 </div>
             }
         </div>

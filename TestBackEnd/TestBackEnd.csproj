@@ -56,8 +56,14 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestMarcaDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestLicorDAL.cs" />
+    <Compile Include="TestMarcaDAL.cs" />
+    <Compile Include="TestPedidoDAL.cs" />
+    <Compile Include="TestProveedorDAL.cs" />
+    <Compile Include="TestRolDAL.cs" />
+    <Compile Include="TestTipoDAL.cs" />
+    <Compile Include="TestUserDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />

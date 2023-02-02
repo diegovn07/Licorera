@@ -1,0 +1,78 @@
+﻿@model IEnumerable<FrontEnd.Models.PedidosViewModel>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.vNombre_Cliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vTelefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dFecha)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idEstado_Pedido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idMedio_Pago)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.bEstado_Pago)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.identificacion)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="myTable">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.vNombre_Cliente)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.vTelefono)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.vEmail)
+                </td>
+                <td>
+                    @{ string fecha = item.dFecha.Day.ToString();
+                        fecha = fecha + '/' + item.dFecha.Month.ToString() + '/' + item.dFecha.Year.ToString();
+                    }
+                    @fecha
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.estado.vNombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.medio.vNombre)
+                </td>
+                <td>
+                    @if (item.bEstado_Pago)
+                    {
+                        <p>Pagado</p>
+                    }
+                    else
+                    {
+                        <p>Pendiente de Pago</p>
+                    }
+                <td>
+                    @Html.DisplayFor(modelItem => item.identificacion)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.idPedido }) |
+                    @Html.ActionLink("Detalles", "Details", new { id = item.idPedido }) |
+                    @Html.ActionLink("Eliminar", "Delete", new { id = item.idPedido })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

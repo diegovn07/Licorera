@@ -9,68 +9,86 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand navbar-light bg-light">
-        <a class="navbar-brand" href="@Url.Content("~/Home/Index")">
-            <span>Licorería</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
-        <!-- Navbar Search-->
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="@Url.Content("~/Home/Index")">Tienda<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Content("~/Home/Index")">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Content("~/Home/Index")" tabindex="-1">Contacto</a>
-                </li>
-            </ul>
-            <!-- Navbar-->
-            <div><a class="btn btn-outline-secondary" href="@Url.Content("~/Licores/Index")">
-                <i class="fas fa-user"></i>
-                <span>Iniciar Sesión</span>
-            </a></div>
-    <ul class="navbar-nav ml-auto ml-md-0">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-shopping-cart mr-2"></i>Carrito</a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="@Url.Content("~/Home/Index")">
-                    Ver Carrito
-                </a>
-                <a class="dropdown-item" href="@Url.Content("~/Home/Index")">
-                    Realizar Pedido
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="@Url.Content("~/Home/Index")">
-                    Cancelar Todo
-                </a>
+<body class="sb-nav-fixed pt-0 d-flex flex-column">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark position-absolute bg-dark" id="navbar">
+            <a class="navbar-brand" href="@Url.Content("~/Home/Index")">
+                <span>Licorería</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="@Url.Content("~/Home/Index")">Tienda<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("About","Home")">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Contact","Home")" tabindex="-1">Contacto</a>
+                    </li>
+
+                </ul>
+                <!-- Navbar-->
+                @if (!Request.IsAuthenticated)
+                {
+                    <div>
+                        <a class="btn btn-outline-secondary" href="@Url.Content("~/User/Login")">
+                            <i class="fas fa-user"></i>
+                            <span>Iniciar Sesión</span>
+                        </a>
+                    </div>
+                }
+                @if (Request.IsAuthenticated)
+                {
+                    <ul class="navbar-nav ml-auto ml-md-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i>@User.Identity.Name</a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                                @if (Request.IsAuthenticated && User.IsInRole("Administrador")) { 
+                                <a class="dropdown-item" href="@Url.Action("Index","Licores")">Administración</a>
+                                }
+                                <a class="dropdown-item" href="#">Perfil</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="@Url.Action("Logout","User")">Salir</a>
+                            </div>
+                        </li>
+                    </ul>
+                }
+                <ul class="navbar-nav ml-auto ml-md-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-shopping-cart mr-2"></i>Carrito</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="@Url.Content("~/Carrito/Index")">
+                                Ver Carrito
+                                @*<span class="badge badge-primary badge-pill" id="carritoCount">0</span>*@
+                            </a>
+                            <a class="dropdown-item" href="@Url.Content("~/Pedidos/userConfirmData")">
+                                Realizar Pedido
+                            </a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </li>
-    </ul>
-</div>
-    </nav>
-    <main>
-        @RenderBody()
-    </main>
-    <footer class="py-4 bg-light mt-auto">
-        <div class="container-fluid">
-            <div class="d-flex align-items-center justify-content-between small">
-                <div class="text-muted">Copyright &copy; Licoreria 2020</div>
-                <div>
-                    <a href="#">Privacy Policy</a>
-                    &middot;
-                    <a href="#">Terms &amp; Conditions</a>
+        </nav>
+        <main class="mt-5">
+            @RenderBody()
+        </main>
+        <footer class="py-4 bg-light mt-auto">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div class="text-muted">Copyright &copy; Licoreria 2020</div>
+                    <div>
+                        <a href="#">Privacy Policy</a>
+                        &middot;
+                        <a href="#">Terms &amp; Conditions</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("Scripts", required: false)
-
+        </footer>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("Scripts", required: false)
 </body>
 </html>
 

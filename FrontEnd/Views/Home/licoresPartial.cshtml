@@ -1,0 +1,41 @@
+﻿@model IEnumerable<FrontEnd.Models.LicoresViewModel>
+
+@foreach (var item in Model)
+{
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="rounded text-center">
+            @{ var imgSrc = String.Format("data:image/jpg;base64,{0}", item.Foto_Licor);}
+            <a href="@Url.Action("Details", "Home", new { id = item.idLicor })">
+                <img class="img-thumbnail" style="height:200px;width:200px"
+                     src="@imgSrc" alt="Sample">
+            </a>
+            <div class="text-center pt-4">
+
+                <h5>@item.marca.vNombre</h5>
+                <p class="mb-2 text-muted text-uppercase small">@item.tipo.vNombre</p>
+                <ul class="list-group list-group-horizontal list-inline justify-content-center">
+                    <li>
+                        <i class="fas fa-star fa-sm text-primary"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star fa-sm text-primary"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star fa-sm text-primary"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star fa-sm text-primary"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-star fa-sm text-primary"></i>
+                    </li>
+                </ul>
+                <hr>
+                <h6 class="mb-3">₡@item.iPrecio</h6>
+                @*<input type="number" data-item-cantidad placeholder="Cantidad" min="1" max="@item.iUnidades" name="cantidad" id="cantidad_@item.idLicor.ToString()" value="1" class="form-control ml-2" style="width:15%">*@
+                <button data-item-button data-item-idLicor="@item.idLicor" data-item-marca="@item.marca.vNombre" data-item-tipo="@item.tipo.vNombre" data-item-iPrecio="@item.iPrecio" data-item-Foto_Licor="@item.Foto_Licor" data-item-iMl="@item.iMl" class="btn btn-primary btn-sm mr-1 mb-2"><i class="fas fa-shopping-cart pr-2"></i>Agregar al Carrito</button>
+                <a class="btn btn-dark btn-sm mr-1 mb-2" href="@Url.Action("Details", "Home", new { id = item.idLicor })">Detalles</a>
+            </div>
+        </div>
+    </div>
+}

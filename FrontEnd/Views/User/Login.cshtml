@@ -1,0 +1,68 @@
+﻿@model FrontEnd.Models.UserViewModel
+@{
+    Layout = null;
+}
+<style>
+body { background-image: url("https://eyesynth.com/wp-content/uploads/2017/05/GEOMETRIC-WHITE.jpg"); background-size: cover; }
+</style>
+<br /><br /><br /><br />
+
+<head>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
+</head>
+
+<div class="container table-bordered mt-5">
+    @using (Html.BeginForm("Autherize", "User", FormMethod.Post, new { @class = "form-signin color", role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <br />
+        <img class="d-block img-fluid w-100" src="~/Media/carrusel1.jpg" />
+        <br />
+        <h2 class="text-center">¡Bienvenido!</h2>
+        <br />
+        <div class="form-group form-header input-group-lg">
+
+            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", placeholder = "Usuario", tabindex = 1 })
+            @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+        </div>
+        <div class="form-group form-header input-group-lg">
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Contraseña", tabindex = 2 })
+            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+        </div>
+        <br /><br />
+        <div class="d-flex justify-content-between">
+            <button type="submit" id="LoginButton" class="btn btn-lg btn-success" style="width:45%" tabindex="4">Ingresar</button>
+            <a class="btn btn-lg btn-block btn-danger" style="width:45%" href="@Url.Content("~/Home/Index")">
+                Cancelar
+            </a>
+        </div>
+        <br />
+        <a href="CreateNoUser"><center>¿No estás registrado? - ¡Registrate!</center></a>
+        <br />
+        <div style="text-align:center">
+            @Html.ActionLink("¿Olvidaste tu contraseña?", "StartRecovery")
+        </div>
+        <div style="color:green; text-align:center;">
+            @ViewBag.Message
+        </div>
+        <div style="color:red; text-align:center;">
+            @ViewBag.Error
+        </div>
+        @*<div>
+                <button type="submit" id="Recuperar Contraseña" class="btn btn-link">Recuperar contraseña </button>
+            </div>*@
+    }
+</div>
+<!-- /.container-fluid -->
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<style>
+    .form-signin {
+        margin: 0 auto;
+        max-width: 330px;
+        padding: 15px;
+    }
+</style>

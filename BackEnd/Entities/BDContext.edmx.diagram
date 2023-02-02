@@ -4,14 +4,25 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="1a91306263a5452f862fcdaad8bca382" Name="Diagram1">
-        <EntityTypeShape EntityType="LicoreraModel.Licores" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="LicoreraModel.Marcas" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="LicoreraModel.Proveedores" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="LicoreraModel.Tipos" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
-        <AssociationConnector Association="LicoreraModel.FK__Licores__idMarca__2F10007B" ManuallyRouted="false" />
-        <AssociationConnector Association="LicoreraModel.FK__Licores__idProve__30F848ED" ManuallyRouted="false" />
-        <AssociationConnector Association="LicoreraModel.FK__Licores__idTipo__300424B4" ManuallyRouted="false" />
+      <Diagram DiagramId="1a91306263a5452f862fcdaad8bca382" Name="Diagram1" ZoomLevel="82">
+        <EntityTypeShape EntityType="LicoreraModel.Detalles_Pedido" Width="1.5" PointX="5.25" PointY="1.625" />
+        <EntityTypeShape EntityType="LicoreraModel.estados_Pedido" Width="1.5" PointX="0.75" PointY="14.25" />
+        <EntityTypeShape EntityType="LicoreraModel.Licores" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="LicoreraModel.Marcas" Width="1.5" PointX="0.75" PointY="2.125" />
+        <EntityTypeShape EntityType="LicoreraModel.medios_Pago" Width="1.5" PointX="0.75" PointY="11.875" />
+        <EntityTypeShape EntityType="LicoreraModel.Pedidos" Width="1.5" PointX="3" PointY="12.125" />
+        <EntityTypeShape EntityType="LicoreraModel.Proveedores" Width="1.5" PointX="0.75" PointY="6" />
+        <EntityTypeShape EntityType="LicoreraModel.Roles" Width="1.5" PointX="2.75" PointY="7" />
+        <EntityTypeShape EntityType="LicoreraModel.Tipos" Width="1.5" PointX="0.75" PointY="9.125" />
+        <EntityTypeShape EntityType="LicoreraModel.Users" Width="1.5" PointX="5" PointY="6" />
+        <AssociationConnector Association="LicoreraModel.FK__Detalles___idLic__2BFE89A6" />
+        <AssociationConnector Association="LicoreraModel.FK__Detalles___idPed__2CF2ADDF" />
+        <AssociationConnector Association="LicoreraModel.FK__Pedidos__idEstad__282DF8C2" />
+        <AssociationConnector Association="LicoreraModel.FK__Licores__idMarca__2F10007B" />
+        <AssociationConnector Association="LicoreraModel.FK__Licores__idProve__30F848ED" />
+        <AssociationConnector Association="LicoreraModel.FK__Licores__idTipo__300424B4" />
+        <AssociationConnector Association="LicoreraModel.FK__Pedidos__idMedio__29221CFB" />
+        <AssociationConnector Association="LicoreraModel.UsersInRoles" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

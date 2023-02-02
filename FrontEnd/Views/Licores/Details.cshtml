@@ -77,13 +77,26 @@
                         <img style="height:200px" src="@imgSrc" class="figure-img img-fluid rounded" alt="...">
                         <figcaption class="figure-caption">Fotografía actual</figcaption>
                     </figure>
-                    
+
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Foto_Detalles)
+                </dt>
+
+                <dd>
+                    <figure class="figure">
+                        @{ var imgSrcDet = String.Format("data:image/jpg;base64,{0}", Model.Foto_Detalles);}
+                        <img style="height:200px" src="@imgSrcDet" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption">Fotografía actual</figcaption>
+                    </figure>
+
                 </dd>
 
             </dl>
         </div>
         <p>
-            @Html.ActionLink("Editar", "Edit", new { id = Model.idLicor }) |
-            @Html.ActionLink("Volver a la lista", "Index")
+            @Html.ActionLink("Editar", "Edit", new { id = Model.idLicor }, new { @class = "btn btn-success" }) |
+            @Html.ActionLink("Volver a la lista", "Index",null, new { @class = "btn btn-danger" })
         </p>
     </div>

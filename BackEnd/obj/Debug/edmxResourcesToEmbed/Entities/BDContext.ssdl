@@ -1,5 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="LicoreraModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Detalles_Pedido">
+    <Key>
+      <PropertyRef Name="idDetalle" />
+    </Key>
+    <Property Name="idDetalle" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idPedido" Type="int" Nullable="false" />
+    <Property Name="idLicor" Type="int" Nullable="false" />
+    <Property Name="iPrecio" Type="int" Nullable="false" />
+    <Property Name="iCantidad" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="estados_Pedido">
+    <Key>
+      <PropertyRef Name="idEstado" />
+    </Key>
+    <Property Name="idEstado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="vNombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
   <EntityType Name="Licores">
     <Key>
       <PropertyRef Name="idLicor" />
@@ -13,6 +30,7 @@
     <Property Name="iPrecio" Type="int" Nullable="false" />
     <Property Name="Foto_Licor" Type="varchar(max)" />
     <Property Name="iMl" Type="int" />
+    <Property Name="Foto_Detalles" Type="varchar(max)" />
   </EntityType>
   <EntityType Name="Marcas">
     <Key>
@@ -20,6 +38,28 @@
     </Key>
     <Property Name="idMarca" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="vNombre" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="medios_Pago">
+    <Key>
+      <PropertyRef Name="idMedio" />
+    </Key>
+    <Property Name="idMedio" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="vNombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pedidos">
+    <Key>
+      <PropertyRef Name="idPedido" />
+    </Key>
+    <Property Name="idPedido" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="vNombre_Cliente" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="vTelefono" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="vEmail" Type="varchar" MaxLength="50" />
+    <Property Name="vDireccion_Envio" Type="varchar" MaxLength="800" Nullable="false" />
+    <Property Name="dFecha" Type="date" Nullable="false" />
+    <Property Name="idEstado_Pedido" Type="int" />
+    <Property Name="idMedio_Pago" Type="int" />
+    <Property Name="bEstado_Pago" Type="bit" Nullable="false" />
+    <Property Name="identificacion" Type="varchar" MaxLength="20" />
   </EntityType>
   <EntityType Name="Proveedores">
     <Key>
@@ -32,6 +72,13 @@
     <Property Name="vCorreo" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="vDireccion" Type="varchar" MaxLength="200" Nullable="false" />
   </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreRol" Type="nvarchar(max)" />
+  </EntityType>
   <EntityType Name="Tipos">
     <Key>
       <PropertyRef Name="idTipo" />
@@ -39,6 +86,55 @@
     <Property Name="idTipo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="vNombre" Type="varchar" MaxLength="100" Nullable="false" />
   </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar(max)" />
+    <Property Name="Password" Type="nvarchar" MaxLength="100" />
+    <Property Name="cedula" Type="nvarchar(max)" />
+    <Property Name="nombre" Type="nvarchar(max)" />
+    <Property Name="apellido1" Type="nvarchar(max)" />
+    <Property Name="apellido2" Type="nvarchar(max)" />
+    <Property Name="Correo" Type="nvarchar(max)" />
+    <Property Name="direccion" Type="nvarchar(max)" />
+    <Property Name="telefono" Type="nvarchar(max)" />
+    <Property Name="telefono2" Type="nvarchar(max)" />
+    <Property Name="token_recovery" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="UsersInRoles">
+    <Key>
+      <PropertyRef Name="User_UserId" />
+      <PropertyRef Name="Role_RoleId" />
+    </Key>
+    <Property Name="User_UserId" Type="int" Nullable="false" />
+    <Property Name="Role_RoleId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Detalles___idLic__2BFE89A6">
+    <End Role="Licores" Type="Self.Licores" Multiplicity="1" />
+    <End Role="Detalles_Pedido" Type="Self.Detalles_Pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Licores">
+        <PropertyRef Name="idLicor" />
+      </Principal>
+      <Dependent Role="Detalles_Pedido">
+        <PropertyRef Name="idLicor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Detalles___idPed__2CF2ADDF">
+    <End Role="Pedidos" Type="Self.Pedidos" Multiplicity="1" />
+    <End Role="Detalles_Pedido" Type="Self.Detalles_Pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pedidos">
+        <PropertyRef Name="idPedido" />
+      </Principal>
+      <Dependent Role="Detalles_Pedido">
+        <PropertyRef Name="idPedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK__Licores__idMarca__2F10007B">
     <End Role="Marcas" Type="Self.Marcas" Multiplicity="1" />
     <End Role="Licores" Type="Self.Licores" Multiplicity="*" />
@@ -75,11 +171,121 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK__Pedidos__idEstad__282DF8C2">
+    <End Role="estados_Pedido" Type="Self.estados_Pedido" Multiplicity="0..1" />
+    <End Role="Pedidos" Type="Self.Pedidos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="estados_Pedido">
+        <PropertyRef Name="idEstado" />
+      </Principal>
+      <Dependent Role="Pedidos">
+        <PropertyRef Name="idEstado_Pedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Pedidos__idMedio__29221CFB">
+    <End Role="medios_Pago" Type="Self.medios_Pago" Multiplicity="0..1" />
+    <End Role="Pedidos" Type="Self.Pedidos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="medios_Pago">
+        <PropertyRef Name="idMedio" />
+      </Principal>
+      <Dependent Role="Pedidos">
+        <PropertyRef Name="idMedio_Pago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_UserRoles_dbo_Roles_Role_RoleId">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UsersInRoles" Type="Self.UsersInRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="UsersInRoles">
+        <PropertyRef Name="Role_RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_UserRoles_dbo_Users_User_UserId">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UsersInRoles" Type="Self.UsersInRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UsersInRoles">
+        <PropertyRef Name="User_UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="CreaUsuarioRol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdUsuario" Type="int" Mode="In" />
+    <Parameter Name="IdRol" Type="int" Mode="In" />
+  </Function>
+  <Function Name="EliminaUsuarioRol" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdUsuario" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paginarLicores" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pagina" Type="int" Mode="In" />
+    <Parameter Name="cantidadReg" Type="int" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="idLicor" Type="int" />
+          <Property Name="idMarca" Type="int" />
+          <Property Name="idTipo" Type="int" />
+          <Property Name="idProveedor" Type="int" />
+          <Property Name="vDescripción" Type="varchar" MaxLength="300" />
+          <Property Name="iUnidades" Type="int" />
+          <Property Name="iPrecio" Type="int" />
+          <Property Name="Foto_Licor" Type="varchar(max)" />
+          <Property Name="iMl" Type="int" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="paginarLicoresProc" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="pagina" Type="int" Mode="In" />
+    <Parameter Name="cantidadReg" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_getRolesForUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="userName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_getUsuarioRole" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="roleName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_getUsuariosRole" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="roleName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_isUserInRole" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="userName" Type="varchar" Mode="In" />
+    <Parameter Name="roleName" Type="varchar" Mode="In" />
+  </Function>
   <EntityContainer Name="LicoreraModelStoreContainer">
+    <EntitySet Name="Detalles_Pedido" EntityType="Self.Detalles_Pedido" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="estados_Pedido" EntityType="Self.estados_Pedido" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Licores" EntityType="Self.Licores" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Marcas" EntityType="Self.Marcas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="medios_Pago" EntityType="Self.medios_Pago" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pedidos" EntityType="Self.Pedidos" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Proveedores" EntityType="Self.Proveedores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Tipos" EntityType="Self.Tipos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UsersInRoles" EntityType="Self.UsersInRoles" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Detalles___idLic__2BFE89A6" Association="Self.FK__Detalles___idLic__2BFE89A6">
+      <End Role="Licores" EntitySet="Licores" />
+      <End Role="Detalles_Pedido" EntitySet="Detalles_Pedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Detalles___idPed__2CF2ADDF" Association="Self.FK__Detalles___idPed__2CF2ADDF">
+      <End Role="Pedidos" EntitySet="Pedidos" />
+      <End Role="Detalles_Pedido" EntitySet="Detalles_Pedido" />
+    </AssociationSet>
     <AssociationSet Name="FK__Licores__idMarca__2F10007B" Association="Self.FK__Licores__idMarca__2F10007B">
       <End Role="Marcas" EntitySet="Marcas" />
       <End Role="Licores" EntitySet="Licores" />
@@ -91,6 +297,22 @@
     <AssociationSet Name="FK__Licores__idTipo__300424B4" Association="Self.FK__Licores__idTipo__300424B4">
       <End Role="Tipos" EntitySet="Tipos" />
       <End Role="Licores" EntitySet="Licores" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Pedidos__idEstad__282DF8C2" Association="Self.FK__Pedidos__idEstad__282DF8C2">
+      <End Role="estados_Pedido" EntitySet="estados_Pedido" />
+      <End Role="Pedidos" EntitySet="Pedidos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Pedidos__idMedio__29221CFB" Association="Self.FK__Pedidos__idMedio__29221CFB">
+      <End Role="medios_Pago" EntitySet="medios_Pago" />
+      <End Role="Pedidos" EntitySet="Pedidos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_UserRoles_dbo_Roles_Role_RoleId" Association="Self.FK_dbo_UserRoles_dbo_Roles_Role_RoleId">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="UsersInRoles" EntitySet="UsersInRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_UserRoles_dbo_Users_User_UserId" Association="Self.FK_dbo_UserRoles_dbo_Users_User_UserId">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UsersInRoles" EntitySet="UsersInRoles" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

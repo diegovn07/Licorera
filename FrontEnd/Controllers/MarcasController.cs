@@ -9,8 +9,10 @@ using FrontEnd.Models;
 
 namespace FrontEnd.Controllers
 {
+    [Authorize(Roles ="Administrador")]
     public class MarcasController : Controller
     {
+
         private MarcasViewModel Convertir(Marcas marca)
         {
             MarcasViewModel marcasViewModel = new MarcasViewModel
@@ -32,6 +34,7 @@ namespace FrontEnd.Controllers
         }
 
         // GET: Marcas
+       // [Authorize]
         public ActionResult Index()
         {
             List<Marcas> marcas;

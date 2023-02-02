@@ -9,3 +9,107 @@ C:\Programas\Licorera\BackEnd\obj\Debug\BackEnd.csproj.CopyComplete
 C:\Programas\Licorera\BackEnd\obj\Debug\BackEnd.dll
 C:\Programas\Licorera\BackEnd\obj\Debug\BackEnd.pdb
 C:\Programas\Licorera\BackEnd\obj\Debug\BackEnd.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\proyecto\Licorera\BackEnd\bin\Debug\BackEnd.dll.config
+C:\Users\ASUS\Desktop\proyecto\Licorera\BackEnd\bin\Debug\BackEnd.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\BackEnd\bin\Debug\BackEnd.pdb
+C:\Users\ASUS\Desktop\proyecto\Licorera\BackEnd\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\BackEnd\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\BackEnd\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Desktop\proyecto\Licorera\BackEnd\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\proyecto\Licorera\BackEnd\obj\Debug\BackEnd.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\proyecto\Licorera\BackEnd\obj\Debug\BackEnd.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\proyecto\Licorera\BackEnd\obj\Debug\BackEnd.csproj.CopyComplete
+C:\Users\ASUS\Desktop\proyecto\Licorera\BackEnd\obj\Debug\BackEnd.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\BackEnd\obj\Debug\BackEnd.pdb
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\BackEnd\bin\Debug\BackEnd.dll.config
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\BackEnd\bin\Debug\BackEnd.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\BackEnd\bin\Debug\BackEnd.pdb
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\BackEnd\bin\Debug\EntityFramework.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\BackEnd\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\BackEnd\bin\Debug\EntityFramework.xml
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\BackEnd\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\BackEnd\obj\Debug\BackEnd.csprojAssemblyReference.cache
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\BackEnd\obj\Debug\BackEnd.csproj.CoreCompileInputs.cache
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\BackEnd\obj\Debug\BackEnd.csproj.CopyComplete
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\BackEnd\obj\Debug\BackEnd.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\BackEnd\obj\Debug\BackEnd.pdb
+C:\Users\FabianSanchezM\Downloads\Licorera\BackEnd\bin\Debug\BackEnd.dll.config
+C:\Users\FabianSanchezM\Downloads\Licorera\BackEnd\bin\Debug\BackEnd.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\BackEnd\bin\Debug\BackEnd.pdb
+C:\Users\FabianSanchezM\Downloads\Licorera\BackEnd\bin\Debug\EntityFramework.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\BackEnd\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\BackEnd\bin\Debug\EntityFramework.xml
+C:\Users\FabianSanchezM\Downloads\Licorera\BackEnd\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\FabianSanchezM\Downloads\Licorera\BackEnd\obj\Debug\BackEnd.csproj.CoreCompileInputs.cache
+C:\Users\FabianSanchezM\Downloads\Licorera\BackEnd\obj\Debug\BackEnd.csproj.CopyComplete
+C:\Users\FabianSanchezM\Downloads\Licorera\BackEnd\obj\Debug\BackEnd.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\BackEnd\obj\Debug\BackEnd.pdb
+C:\Progra5\Licorera\BackEnd\bin\Debug\BackEnd.dll.config
+C:\Progra5\Licorera\BackEnd\bin\Debug\BackEnd.dll
+C:\Progra5\Licorera\BackEnd\bin\Debug\BackEnd.pdb
+C:\Progra5\Licorera\BackEnd\bin\Debug\EntityFramework.dll
+C:\Progra5\Licorera\BackEnd\bin\Debug\EntityFramework.SqlServer.dll
+C:\Progra5\Licorera\BackEnd\bin\Debug\EntityFramework.xml
+C:\Progra5\Licorera\BackEnd\bin\Debug\EntityFramework.SqlServer.xml
+C:\Progra5\Licorera\BackEnd\obj\Debug\BackEnd.csprojAssemblyReference.cache
+C:\Progra5\Licorera\BackEnd\obj\Debug\BackEnd.csproj.CoreCompileInputs.cache
+C:\Progra5\Licorera\BackEnd\obj\Debug\BackEnd.csproj.CopyComplete
+C:\Progra5\Licorera\BackEnd\obj\Debug\BackEnd.dll
+C:\Progra5\Licorera\BackEnd\obj\Debug\BackEnd.pdb
+C:\Projects\Progra5\Licorera2\BackEnd\bin\Debug\BackEnd.dll.config
+C:\Projects\Progra5\Licorera2\BackEnd\bin\Debug\BackEnd.dll
+C:\Projects\Progra5\Licorera2\BackEnd\bin\Debug\BackEnd.pdb
+C:\Projects\Progra5\Licorera2\BackEnd\bin\Debug\EntityFramework.dll
+C:\Projects\Progra5\Licorera2\BackEnd\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\Progra5\Licorera2\BackEnd\bin\Debug\EntityFramework.xml
+C:\Projects\Progra5\Licorera2\BackEnd\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\Progra5\Licorera2\BackEnd\obj\Debug\BackEnd.csprojAssemblyReference.cache
+C:\Projects\Progra5\Licorera2\BackEnd\obj\Debug\BackEnd.csproj.CoreCompileInputs.cache
+C:\Projects\Progra5\Licorera2\BackEnd\obj\Debug\BackEnd.csproj.CopyComplete
+C:\Projects\Progra5\Licorera2\BackEnd\obj\Debug\BackEnd.dll
+C:\Projects\Progra5\Licorera2\BackEnd\obj\Debug\BackEnd.pdb
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\BackEnd\bin\Debug\BackEnd.dll.config
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\BackEnd\bin\Debug\BackEnd.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\BackEnd\bin\Debug\BackEnd.pdb
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\BackEnd\bin\Debug\EntityFramework.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\BackEnd\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\BackEnd\bin\Debug\EntityFramework.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\BackEnd\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\BackEnd\obj\Debug\BackEnd.csprojAssemblyReference.cache
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\BackEnd\obj\Debug\BackEnd.csproj.CopyComplete
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\BackEnd\obj\Debug\BackEnd.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\BackEnd\obj\Debug\BackEnd.pdb
+C:\Users\diego\Desktop\U\Progra 5\Licorera\BackEnd\bin\Debug\BackEnd.dll.config
+C:\Users\diego\Desktop\U\Progra 5\Licorera\BackEnd\bin\Debug\BackEnd.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\BackEnd\bin\Debug\BackEnd.pdb
+C:\Users\diego\Desktop\U\Progra 5\Licorera\BackEnd\bin\Debug\EntityFramework.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\BackEnd\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\BackEnd\bin\Debug\EntityFramework.xml
+C:\Users\diego\Desktop\U\Progra 5\Licorera\BackEnd\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\diego\Desktop\U\Progra 5\Licorera\BackEnd\obj\Debug\BackEnd.csproj.CopyComplete
+C:\Users\diego\Desktop\U\Progra 5\Licorera\BackEnd\obj\Debug\BackEnd.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\BackEnd\obj\Debug\BackEnd.pdb
+C:\Users\diego\Desktop\U\Progra 5\Licorera\BackEnd\obj\Debug\BackEnd.csprojAssemblyReference.cache
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\BackEnd\bin\Debug\BackEnd.dll.config
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\BackEnd\bin\Debug\BackEnd.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\BackEnd\bin\Debug\BackEnd.pdb
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\BackEnd\bin\Debug\EntityFramework.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\BackEnd\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\BackEnd\bin\Debug\EntityFramework.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\BackEnd\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\BackEnd\obj\Debug\BackEnd.csprojAssemblyReference.cache
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\BackEnd\obj\Debug\BackEnd.csproj.CopyComplete
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\BackEnd\obj\Debug\BackEnd.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\BackEnd\obj\Debug\BackEnd.pdb
+C:\Users\FabianSanchezM\Desktop\Licorera\BackEnd\bin\Debug\BackEnd.dll.config
+C:\Users\FabianSanchezM\Desktop\Licorera\BackEnd\bin\Debug\BackEnd.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\BackEnd\bin\Debug\BackEnd.pdb
+C:\Users\FabianSanchezM\Desktop\Licorera\BackEnd\bin\Debug\EntityFramework.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\BackEnd\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\BackEnd\bin\Debug\EntityFramework.xml
+C:\Users\FabianSanchezM\Desktop\Licorera\BackEnd\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\FabianSanchezM\Desktop\Licorera\BackEnd\obj\Debug\BackEnd.csprojAssemblyReference.cache
+C:\Users\FabianSanchezM\Desktop\Licorera\BackEnd\obj\Debug\BackEnd.csproj.CoreCompileInputs.cache
+C:\Users\FabianSanchezM\Desktop\Licorera\BackEnd\obj\Debug\BackEnd.csproj.CopyComplete
+C:\Users\FabianSanchezM\Desktop\Licorera\BackEnd\obj\Debug\BackEnd.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\BackEnd\obj\Debug\BackEnd.pdb

@@ -12,6 +12,8 @@ namespace BackEnd.Entities
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class BDContext : DbContext
     {
@@ -25,9 +27,113 @@ namespace BackEnd.Entities
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Detalles_Pedido> Detalles_Pedido { get; set; }
+        public virtual DbSet<estados_Pedido> estados_Pedido { get; set; }
         public virtual DbSet<Licores> Licores { get; set; }
         public virtual DbSet<Marcas> Marcas { get; set; }
+        public virtual DbSet<medios_Pago> medios_Pago { get; set; }
+        public virtual DbSet<Pedidos> Pedidos { get; set; }
         public virtual DbSet<Proveedores> Proveedores { get; set; }
+        public virtual DbSet<Roles> Roles { get; set; }
         public virtual DbSet<Tipos> Tipos { get; set; }
+        public virtual DbSet<Users> Users { get; set; }
+    
+        public virtual ObjectResult<string> sp_getRolesForUser(string userName)
+        {
+            var userNameParameter = userName != null ?
+                new ObjectParameter("userName", userName) :
+                new ObjectParameter("userName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("sp_getRolesForUser", userNameParameter);
+        }
+    
+        public virtual ObjectResult<string> sp_getUsuarioRole(string roleName)
+        {
+            var roleNameParameter = roleName != null ?
+                new ObjectParameter("roleName", roleName) :
+                new ObjectParameter("roleName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("sp_getUsuarioRole", roleNameParameter);
+        }
+    
+        public virtual ObjectResult<Nullable<bool>> sp_isUserInRole(string userName, string roleName)
+        {
+            var userNameParameter = userName != null ?
+                new ObjectParameter("userName", userName) :
+                new ObjectParameter("userName", typeof(string));
+    
+            var roleNameParameter = roleName != null ?
+                new ObjectParameter("roleName", roleName) :
+                new ObjectParameter("roleName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<bool>>("sp_isUserInRole", userNameParameter, roleNameParameter);
+        }
+    
+        public virtual ObjectResult<string> sp_getUsuariosRole(string roleName)
+        {
+            var roleNameParameter = roleName != null ?
+                new ObjectParameter("roleName", roleName) :
+                new ObjectParameter("roleName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("sp_getUsuariosRole", roleNameParameter);
+        }
+    
+        public virtual int CreaUsuarioRol(Nullable<int> idUsuario, Nullable<int> idRol)
+        {
+            var idUsuarioParameter = idUsuario.HasValue ?
+                new ObjectParameter("IdUsuario", idUsuario) :
+                new ObjectParameter("IdUsuario", typeof(int));
+    
+            var idRolParameter = idRol.HasValue ?
+                new ObjectParameter("IdRol", idRol) :
+                new ObjectParameter("IdRol", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("CreaUsuarioRol", idUsuarioParameter, idRolParameter);
+        }
+    
+        public virtual int EliminaUsuarioRol(Nullable<int> idUsuario)
+        {
+            var idUsuarioParameter = idUsuario.HasValue ?
+                new ObjectParameter("IdUsuario", idUsuario) :
+                new ObjectParameter("IdUsuario", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("EliminaUsuarioRol", idUsuarioParameter);
+        }
+    
+        [DbFunction("BDContext", "paginarLicores")]
+        public virtual IQueryable<paginarLicores_Result> paginarLicores(Nullable<int> pagina, Nullable<int> cantidadReg)
+        {
+            var paginaParameter = pagina.HasValue ?
+                new ObjectParameter("pagina", pagina) :
+                new ObjectParameter("pagina", typeof(int));
+    
+            var cantidadRegParameter = cantidadReg.HasValue ?
+                new ObjectParameter("cantidadReg", cantidadReg) :
+                new ObjectParameter("cantidadReg", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<paginarLicores_Result>("[BDContext].[paginarLicores](@pagina, @cantidadReg)", paginaParameter, cantidadRegParameter);
+        }
+    
+        public virtual ObjectResult<paginarLicoresProc_Result> paginarLicoresProc(Nullable<int> pagina, Nullable<int> cantidadReg)
+        {
+            var paginaParameter = pagina.HasValue ?
+                new ObjectParameter("pagina", pagina) :
+                new ObjectParameter("pagina", typeof(int));
+    
+            var cantidadRegParameter = cantidadReg.HasValue ?
+                new ObjectParameter("cantidadReg", cantidadReg) :
+                new ObjectParameter("cantidadReg", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paginarLicoresProc_Result>("paginarLicoresProc", paginaParameter, cantidadRegParameter);
+        }
+    
+        public virtual int sp_getUsuarioRole1(string roleName)
+        {
+            var roleNameParameter = roleName != null ?
+                new ObjectParameter("roleName", roleName) :
+                new ObjectParameter("roleName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_getUsuarioRole1", roleNameParameter);
+        }
     }
 }

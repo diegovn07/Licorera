@@ -24,6 +24,8 @@ namespace BackEnd.DAL
             try
             {
                 Context.Set<TEntity>().Add(entity);
+                //Context.SaveChanges();
+                //TEntity id = entity;
                 return true;
             }
             catch (Exception)
@@ -46,7 +48,7 @@ namespace BackEnd.DAL
             }
         }
 
-        public IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
+        public IQueryable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
         {
             try
             {

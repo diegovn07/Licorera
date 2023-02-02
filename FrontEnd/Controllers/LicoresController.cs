@@ -8,9 +8,11 @@ using BackEnd.Entities;
 using FrontEnd.Models;
 
 namespace FrontEnd.Controllers
-{
+{ 
+    [Authorize(Roles = "Administrador")]
     public class LicoresController : Controller
     {
+       
         private LicoresViewModel Convertir(Licores licor)
         {
             LicoresViewModel licorViewModel = new LicoresViewModel
@@ -23,6 +25,7 @@ namespace FrontEnd.Controllers
                 iUnidades = licor.iUnidades,
                 iPrecio = licor.iPrecio,
                 Foto_Licor = licor.Foto_Licor,
+                Foto_Detalles = licor.Foto_Detalles,
                 iMl = (int) licor.iMl,
             };
             return licorViewModel;
@@ -40,6 +43,7 @@ namespace FrontEnd.Controllers
                 iUnidades = licorViewModel.iUnidades,
                 iPrecio = licorViewModel.iPrecio,
                 Foto_Licor = licorViewModel.Foto_Licor,
+                Foto_Detalles = licorViewModel.Foto_Detalles,
                 iMl = (int) licorViewModel.iMl
             };
             return licor;
@@ -110,6 +114,13 @@ namespace FrontEnd.Controllers
             }
             string archivoBase64 = System.Convert.ToBase64String(img);
             licorViewModel.Foto_Licor = archivoBase64;
+
+            using (var binary = new System.IO.BinaryReader(licorViewModel.Foto_Det.InputStream))
+            {
+                img = binary.ReadBytes(licorViewModel.Foto_Det.ContentLength);
+            }
+            archivoBase64 = System.Convert.ToBase64String(img);
+            licorViewModel.Foto_Detalles = archivoBase64;
             using (UnidadDeTrabajo<Licores> unidad = new UnidadDeTrabajo<Licores>(new BDContext()))
             {
                 unidad.genericDAL.Add(this.Convertir(licorViewModel));
@@ -168,19 +179,22 @@ namespace FrontEnd.Controllers
                 }
                 string archivoBase64 = System.Convert.ToBase64String(img);
                 licorViewModel.Foto_Licor = archivoBase64;
-
-                using (UnidadDeTrabajo<Licores> unidad = new UnidadDeTrabajo<Licores>(new BDContext()))
-                {
-                    unidad.genericDAL.Update(this.Convertir(licorViewModel));
-                    unidad.Complete();
-                }
             }
-            else {
-                using (UnidadDeTrabajo<Licores> unidad = new UnidadDeTrabajo<Licores>(new BDContext()))
+            if (licorViewModel.Foto_Det != null)
+            {
+                byte[] img = null;
+                using (var binary = new System.IO.BinaryReader(licorViewModel.Foto_Det.InputStream))
                 {
-                    unidad.genericDAL.Update(this.Convertir(licorViewModel));
-                    unidad.Complete();
+                    img = binary.ReadBytes(licorViewModel.Foto_Det.ContentLength);
                 }
+                string archivoBase64 = System.Convert.ToBase64String(img);
+                licorViewModel.Foto_Detalles = archivoBase64;
+            }
+
+            using (UnidadDeTrabajo<Licores> unidad = new UnidadDeTrabajo<Licores>(new BDContext()))
+            {
+                unidad.genericDAL.Update(this.Convertir(licorViewModel));
+                unidad.Complete();
             }
             return RedirectToAction("Index");
         }
@@ -221,10 +235,26 @@ namespace FrontEnd.Controllers
             using (UnidadDeTrabajo<Licores> unidad = new UnidadDeTrabajo<Licores>(new BDContext()))
             {
                 licor = unidad.genericDAL.Get(id);
-
             }
 
-            return View(this.Convertir(licor));
+            LicoresViewModel licorViewModel = this.Convertir(licor);
+
+            using (UnidadDeTrabajo<Marcas> Unidad = new UnidadDeTrabajo<Marcas>(new BDContext()))
+            {
+                licorViewModel.marca = Unidad.genericDAL.Get(licor.idMarca);
+            }
+
+            using (UnidadDeTrabajo<Tipos> Unidad = new UnidadDeTrabajo<Tipos>(new BDContext()))
+            {
+                licorViewModel.tipo = Unidad.genericDAL.Get(licor.idTipo);
+            }
+
+            using (UnidadDeTrabajo<Proveedores> Unidad = new UnidadDeTrabajo<Proveedores>(new BDContext()))
+            {
+                licorViewModel.proveedor = Unidad.genericDAL.Get(licor.idProveedor);
+            }
+
+            return View(licorViewModel);
         }
 
         [HttpPost]

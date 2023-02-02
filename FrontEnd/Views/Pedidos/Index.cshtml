@@ -1,0 +1,49 @@
+﻿@model FrontEnd.Models.ViewModel.pedidosFilterViewModel
+
+<div class="container-fluid">
+    <div class="d-flex">
+        <input class="form-control" id="myInput" type="text" placeholder="Buscar..">
+        <p class=" ml-4 mr-2 mt-2">Estado del Pedido</p>
+        @Html.DropDownList("Estado", new SelectList(Model.estados, "idEstado", "vNombre"), htmlAttributes: new { @class = "form-control", @id = "estado" })
+        <button class="ml-2 btn btn-success" onclick="filtrar()">Buscar</button>
+    </div>
+    <div id="content">
+        @Html.Partial("~/Views/Pedidos/pedidosPartial.cshtml", Model.lista)
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+
+        function filtrar() {
+            
+            var x = document.getElementById("estado").value;
+            var url = "/Pedidos/index/?estado=" + x;
+            $.ajax({
+                    url: url,
+                    cache: false,
+                    type: "GET",
+                    success: function (data) {
+                        $('#content').html(data);
+                        /* little fade in effect */
+                        $('#content').fadeIn('fast');
+
+                    },
+                    error: function (reponse) {
+                        alert("error : " + reponse);
+                    }
+                });
+        }
+
+
+    </script>
+}

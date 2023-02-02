@@ -9,6 +9,7 @@ using FrontEnd.Models;
 
 namespace FrontEnd.Controllers
 {
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         private LicoresViewModel Convertir(Licores licor)
@@ -23,6 +24,7 @@ namespace FrontEnd.Controllers
                 iUnidades = licor.iUnidades,
                 iPrecio = licor.iPrecio,
                 Foto_Licor = licor.Foto_Licor,
+                Foto_Detalles = licor.Foto_Detalles,
                 iMl = (int)licor.iMl,
             };
             return licorViewModel;
@@ -40,18 +42,44 @@ namespace FrontEnd.Controllers
                 iUnidades = licorViewModel.iUnidades,
                 iPrecio = licorViewModel.iPrecio,
                 Foto_Licor = licorViewModel.Foto_Licor,
+                Foto_Detalles = licorViewModel.Foto_Detalles,
                 iMl = (int)licorViewModel.iMl
             };
             return licor;
         }
-        public ActionResult Index()
-        {
-            List<Licores> licores;
-            using (UnidadDeTrabajo<Licores> Unidad = new UnidadDeTrabajo<Licores>(new BDContext()))
-            {
-                licores = Unidad.genericDAL.GetAll().ToList();
-            }
 
+        public ActionResult Index(List<int> filt = null)
+        {
+            
+            List<Licores> licores;
+            if (filt == null)
+            {
+                using (UnidadDeTrabajo<Licores> Unidad = new UnidadDeTrabajo<Licores>(new BDContext()))
+                {
+                    licores = Unidad.genericDAL.GetAll().ToList();
+                }
+            }
+            else {
+                if (filt[0] != 0)
+                {
+                    using (UnidadDeTrabajo<Licores> Unidad = new UnidadDeTrabajo<Licores>(new BDContext()))
+                    {
+                        licores = Unidad.genericDAL.GetAll().ToList();
+                        for (var i = 0; i < filt.Count; i++)
+                        {
+                            licores = licores.Where(licor => licor.idTipo == filt[i]).ToList();
+                        }
+                    }
+                }
+                else {
+                    using (UnidadDeTrabajo<Licores> Unidad = new UnidadDeTrabajo<Licores>(new BDContext()))
+                    {
+                        licores = Unidad.genericDAL.GetAll().ToList();
+                    }
+                }
+
+                
+            }
             List<LicoresViewModel> lista = new List<LicoresViewModel>();
             LicoresViewModel licorViewModel;
             foreach (var item in licores)
@@ -75,19 +103,62 @@ namespace FrontEnd.Controllers
 
                 lista.Add(licorViewModel);
             }
-            return View(lista);
+
+            if (Request.IsAjaxRequest())
+            {
+                return PartialView("~/Views/Home/licoresPartial.cshtml", lista);
+            }
+            else {
+                List<Tipos> tipos = new List<Tipos>();
+                using (UnidadDeTrabajo<Tipos> Unidad = new UnidadDeTrabajo<Tipos>(new BDContext()))
+                {
+                    tipos = Unidad.genericDAL.GetAll().ToList();
+                }
+                licoresTiendaViewModel data = new licoresTiendaViewModel
+                {
+                    lista = lista,
+                    tipos = tipos
+                };
+                return View(data);
+            }
+            
         }
 
-        public ActionResult About()
+        public ActionResult Details(int id) /*Agregué este details para hacer un boton de los detalles del producto para agrregarlo al carrito*/
         {
-            ViewBag.Message = "Your application description page.";
 
-            return View();
+            Licores licor;
+            using (UnidadDeTrabajo<Licores> unidad = new UnidadDeTrabajo<Licores>(new BDContext()))
+            {
+                licor = unidad.genericDAL.Get(id);
+            }
+
+            LicoresViewModel licorViewModel = this.Convertir(licor);
+
+            using (UnidadDeTrabajo<Marcas> Unidad = new UnidadDeTrabajo<Marcas>(new BDContext()))
+            {
+                licorViewModel.marca = Unidad.genericDAL.Get(licor.idMarca);
+            }
+
+            using (UnidadDeTrabajo<Tipos> Unidad = new UnidadDeTrabajo<Tipos>(new BDContext()))
+            {
+                licorViewModel.tipo = Unidad.genericDAL.Get(licor.idTipo);
+            }
+
+            using (UnidadDeTrabajo<Proveedores> Unidad = new UnidadDeTrabajo<Proveedores>(new BDContext()))
+            {
+                licorViewModel.proveedor = Unidad.genericDAL.Get(licor.idProveedor);
+            }
+
+            return View(licorViewModel);
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            return View();
+        }
+        public ActionResult About()
+        {
 
             return View();
         }

@@ -1,0 +1,142 @@
+﻿@model FrontEnd.Models.LicoresViewModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/NormalUser_Layout.cshtml";
+}
+
+<!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <h1 class="my-4">
+            @Html.DisplayFor(model => model.tipo.vNombre)
+            <small>@Html.DisplayFor(model => model.marca.vNombre)</small>
+        </h1>
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                @{ var imgSrc = String.Format("data:image/jpg;base64,{0}", Model.Foto_Detalles);}
+                <img src="@imgSrc" class="img-fluid" alt="...">
+                @*<img class="img-fluid" src="http://placehold.it/750x500" alt="">*@
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="my-3">@Html.DisplayNameFor(model => model.vDescripción)</h3>
+                @Html.DisplayFor(model => model.vDescripción)
+            </div>
+            <div class="d-flex w-100 justify-content-end">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Cantidad</span>
+                </div>
+                <input type="number" placeholder="Cantidad" min="1" max="@Model.iUnidades" data-item-cantidad value="1" class="form-control ml-2" style="width:7%">
+                <button data-item-button data-item-idLicor="@Model.idLicor" data-item-marca="@Model.marca.vNombre" data-item-tipo="@Model.tipo.vNombre" data-item-iPrecio="@Model.iPrecio" data-item-Foto_Licor="@Model.Foto_Licor" data-item-iMl="@Model.iMl" class="btn btn-success ml-2"><i class="fas fa-shopping-cart pr-2"></i>Agregar al Carrito</button>
+            </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button hidden type="button" data-toggle="modal" data-target="#exampleModal" id="modalButton">
+            Modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Listo!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Se ha agredado el producto al carrito
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Continuar Comprando</button>
+                        <a class="btn btn-success" href="@Url.Action("Index", "Carrito")">
+                            <i class="fas fa-cart-plus"></i>
+                            <span>Ir al Carrito</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- Related Projects Row -->
+        <h3 class="my-4">Te podría interesar</h3>
+
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-4">
+                <a href="#">
+                    <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+        </div>
+        <!-- /.row -->
+    </div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var buttons = document.querySelectorAll('[data-item-button]');
+            if (buttons.length > 0) {
+                buttons.forEach(element => { element.addEventListener('click', agregarLicor) })
+            }
+        });
+        function agregarLicor(event) {
+            var item = event.target;
+            var cantidad = item.parentElement.querySelector('[data-item-cantidad]');
+            var licor = {
+                idLicor: item.getAttribute('data-item-idLicor'),
+                marca: item.getAttribute('data-item-marca'),
+                tipo: item.getAttribute('data-item-tipo'),
+                iPrecio: item.getAttribute('data-item-iPrecio'),
+                Foto_Licor: item.getAttribute('data-item-Foto_Licor'),
+                iMl: item.getAttribute('data-item-iMl'),
+                cantidad: cantidad.value
+            }
+            var url = "https://localhost:44358/Carrito/agregarCarrito"
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: JSON.stringify(licor),
+                contentType: 'application/json; charset=UTF-8',
+                dataType: 'json',
+                success: function (data) {
+                    if (data.status) {
+                        //Refresh the calender
+                        document.getElementById('modalButton').click()
+                    } else {
+                        alert(data.message);
+                    }
+                },
+                error: function () {
+                    alert('Failed');
+                }
+            })
+        }
+    </script>
+}

@@ -1,10 +1,135 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="LicoreraModelStoreContainer" CdmEntityContainer="BDContext">
+    <FunctionImportMapping FunctionImportName="sp_getRolesForUser" FunctionName="LicoreraModel.Store.sp_getRolesForUser" />
+    <FunctionImportMapping FunctionImportName="sp_isUserInRole" FunctionName="LicoreraModel.Store.sp_isUserInRole" />
+    <FunctionImportMapping FunctionImportName="sp_getUsuariosRole" FunctionName="LicoreraModel.Store.sp_getUsuariosRole" />
+    <FunctionImportMapping FunctionImportName="CreaUsuarioRol" FunctionName="LicoreraModel.Store.CreaUsuarioRol" />
+    <FunctionImportMapping FunctionImportName="EliminaUsuarioRol" FunctionName="LicoreraModel.Store.EliminaUsuarioRol" />
+    <EntitySetMapping Name="Detalles_Pedido">
+      <EntityTypeMapping TypeName="LicoreraModel.Detalles_Pedido">
+        <MappingFragment StoreEntitySet="Detalles_Pedido">
+          <ScalarProperty Name="iCantidad" ColumnName="iCantidad" />
+          <ScalarProperty Name="iPrecio" ColumnName="iPrecio" />
+          <ScalarProperty Name="idLicor" ColumnName="idLicor" />
+          <ScalarProperty Name="idPedido" ColumnName="idPedido" />
+          <ScalarProperty Name="idDetalle" ColumnName="idDetalle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="estados_Pedido">
+      <EntityTypeMapping TypeName="LicoreraModel.estados_Pedido">
+        <MappingFragment StoreEntitySet="estados_Pedido">
+          <ScalarProperty Name="vNombre" ColumnName="vNombre" />
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Licores">
       <EntityTypeMapping TypeName="LicoreraModel.Licores">
         <MappingFragment StoreEntitySet="Licores">
+          <ScalarProperty Name="Foto_Detalles" ColumnName="Foto_Detalles" />
           <ScalarProperty Name="iMl" ColumnName="iMl" />
+          <ScalarProperty Name="Foto_Licor" ColumnName="Foto_Licor" />
+          <ScalarProperty Name="iPrecio" ColumnName="iPrecio" />
+          <ScalarProperty Name="iUnidades" ColumnName="iUnidades" />
+          <ScalarProperty Name="vDescripción" ColumnName="vDescripción" />
+          <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />
+          <ScalarProperty Name="idTipo" ColumnName="idTipo" />
+          <ScalarProperty Name="idMarca" ColumnName="idMarca" />
+          <ScalarProperty Name="idLicor" ColumnName="idLicor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Marcas">
+      <EntityTypeMapping TypeName="LicoreraModel.Marcas">
+        <MappingFragment StoreEntitySet="Marcas">
+          <ScalarProperty Name="vNombre" ColumnName="vNombre" />
+          <ScalarProperty Name="idMarca" ColumnName="idMarca" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="medios_Pago">
+      <EntityTypeMapping TypeName="LicoreraModel.medios_Pago">
+        <MappingFragment StoreEntitySet="medios_Pago">
+          <ScalarProperty Name="vNombre" ColumnName="vNombre" />
+          <ScalarProperty Name="idMedio" ColumnName="idMedio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pedidos">
+      <EntityTypeMapping TypeName="LicoreraModel.Pedidos">
+        <MappingFragment StoreEntitySet="Pedidos">
+          <ScalarProperty Name="identificacion" ColumnName="identificacion" />
+          <ScalarProperty Name="bEstado_Pago" ColumnName="bEstado_Pago" />
+          <ScalarProperty Name="idMedio_Pago" ColumnName="idMedio_Pago" />
+          <ScalarProperty Name="idEstado_Pedido" ColumnName="idEstado_Pedido" />
+          <ScalarProperty Name="dFecha" ColumnName="dFecha" />
+          <ScalarProperty Name="vDireccion_Envio" ColumnName="vDireccion_Envio" />
+          <ScalarProperty Name="vEmail" ColumnName="vEmail" />
+          <ScalarProperty Name="vTelefono" ColumnName="vTelefono" />
+          <ScalarProperty Name="vNombre_Cliente" ColumnName="vNombre_Cliente" />
+          <ScalarProperty Name="idPedido" ColumnName="idPedido" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Proveedores">
+      <EntityTypeMapping TypeName="LicoreraModel.Proveedores">
+        <MappingFragment StoreEntitySet="Proveedores">
+          <ScalarProperty Name="vDireccion" ColumnName="vDireccion" />
+          <ScalarProperty Name="vCorreo" ColumnName="vCorreo" />
+          <ScalarProperty Name="iTelefono" ColumnName="iTelefono" />
+          <ScalarProperty Name="iCedula" ColumnName="iCedula" />
+          <ScalarProperty Name="vNombre" ColumnName="vNombre" />
+          <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="LicoreraModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="NombreRol" ColumnName="NombreRol" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tipos">
+      <EntityTypeMapping TypeName="LicoreraModel.Tipos">
+        <MappingFragment StoreEntitySet="Tipos">
+          <ScalarProperty Name="vNombre" ColumnName="vNombre" />
+          <ScalarProperty Name="idTipo" ColumnName="idTipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="LicoreraModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="token_recovery" ColumnName="token_recovery" />
+          <ScalarProperty Name="telefono2" ColumnName="telefono2" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="apellido2" ColumnName="apellido2" />
+          <ScalarProperty Name="apellido1" ColumnName="apellido1" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="cedula" ColumnName="cedula" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="UsersInRoles" TypeName="LicoreraModel.UsersInRoles" StoreEntitySet="UsersInRoles">
+      <EndProperty Name="Users">
+        <ScalarProperty Name="UserId" ColumnName="User_UserId" />
+      </EndProperty>
+      <EndProperty Name="Roles">
+        <ScalarProperty Name="RoleId" ColumnName="Role_RoleId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="paginarLicores" FunctionName="LicoreraModel.Store.paginarLicores">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LicoreraModel.paginarLicores_Result">
           <ScalarProperty Name="idLicor" ColumnName="idLicor" />
           <ScalarProperty Name="idMarca" ColumnName="idMarca" />
           <ScalarProperty Name="idTipo" ColumnName="idTipo" />
@@ -13,36 +138,26 @@
           <ScalarProperty Name="iUnidades" ColumnName="iUnidades" />
           <ScalarProperty Name="iPrecio" ColumnName="iPrecio" />
           <ScalarProperty Name="Foto_Licor" ColumnName="Foto_Licor" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Marcas">
-      <EntityTypeMapping TypeName="LicoreraModel.Marcas">
-        <MappingFragment StoreEntitySet="Marcas">
+          <ScalarProperty Name="iMl" ColumnName="iMl" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paginarLicoresProc" FunctionName="LicoreraModel.Store.paginarLicoresProc">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LicoreraModel.paginarLicoresProc_Result">
+          <ScalarProperty Name="idLicor" ColumnName="idLicor" />
           <ScalarProperty Name="idMarca" ColumnName="idMarca" />
-          <ScalarProperty Name="vNombre" ColumnName="vNombre" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Proveedores">
-      <EntityTypeMapping TypeName="LicoreraModel.Proveedores">
-        <MappingFragment StoreEntitySet="Proveedores">
-          <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />
-          <ScalarProperty Name="vNombre" ColumnName="vNombre" />
-          <ScalarProperty Name="iCedula" ColumnName="iCedula" />
-          <ScalarProperty Name="iTelefono" ColumnName="iTelefono" />
-          <ScalarProperty Name="vCorreo" ColumnName="vCorreo" />
-          <ScalarProperty Name="vDireccion" ColumnName="vDireccion" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Tipos">
-      <EntityTypeMapping TypeName="LicoreraModel.Tipos">
-        <MappingFragment StoreEntitySet="Tipos">
           <ScalarProperty Name="idTipo" ColumnName="idTipo" />
-          <ScalarProperty Name="vNombre" ColumnName="vNombre" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
+          <ScalarProperty Name="idProveedor" ColumnName="idProveedor" />
+          <ScalarProperty Name="vDescripción" ColumnName="vDescripción" />
+          <ScalarProperty Name="iUnidades" ColumnName="iUnidades" />
+          <ScalarProperty Name="iPrecio" ColumnName="iPrecio" />
+          <ScalarProperty Name="Foto_Licor" ColumnName="Foto_Licor" />
+          <ScalarProperty Name="iMl" ColumnName="iMl" />
+          <ScalarProperty Name="Foto_Detalles" ColumnName="Foto_Detalles" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_getUsuarioRole1" FunctionName="LicoreraModel.Store.sp_getUsuarioRole" />
   </EntityContainerMapping>
 </Mapping>

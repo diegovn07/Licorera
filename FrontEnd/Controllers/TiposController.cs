@@ -9,6 +9,7 @@ using FrontEnd.Models;
 
 namespace FrontEnd.Controllers
 {
+    [Authorize(Roles = "Administrador")]
     public class TiposController : Controller
     {
         private TiposViewModel Convertir(Tipos tipo)

@@ -85,3 +85,792 @@ C:\Programas\Licorera\FrontEnd\bin\EntityFramework.dll
 C:\Programas\Licorera\FrontEnd\bin\BackEnd.pdb
 C:\Programas\Licorera\FrontEnd\bin\BackEnd.dll.config
 C:\Programas\Licorera\FrontEnd\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\FrontEnd.dll.config
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\FrontEnd.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\FrontEnd.pdb
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\csc.exe
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\csc.exe.config
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\csc.rsp
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\csi.exe
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\csi.exe.config
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\csi.rsp
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.AppContext.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.Console.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.IO.Compression.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.IO.Pipes.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.Security.Claims.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.ValueTuple.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\vbc.exe
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\vbc.exe.config
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\vbc.rsp
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\VBCSCompiler.exe
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\Antlr3.Runtime.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\BackEnd.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\EntityFramework.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\Newtonsoft.Json.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\System.Web.Helpers.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\System.Web.Mvc.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\System.Web.Optimization.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\System.Web.Razor.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\System.Web.WebPages.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\System.Web.WebPages.Razor.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\WebGrease.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\BackEnd.pdb
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\BackEnd.dll.config
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\System.Web.Helpers.xml
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\System.Web.Mvc.xml
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\System.Web.Optimization.xml
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\System.Web.Razor.xml
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\System.Web.WebPages.xml
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\System.Web.WebPages.Razor.xml
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\Newtonsoft.Json.xml
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\Antlr3.Runtime.pdb
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\es\System.Web.Helpers.resources.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\es\System.Web.Mvc.resources.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\es\System.Web.Optimization.resources.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\es\System.Web.Razor.resources.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\es\System.Web.WebPages.resources.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\obj\Debug\FrontEnd.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\obj\Debug\FrontEnd.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\obj\Debug\FrontEnd.csproj.CopyComplete
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\obj\Debug\FrontEnd.dll
+C:\Users\ASUS\Desktop\proyecto\Licorera\FrontEnd\obj\Debug\FrontEnd.pdb
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\FrontEnd.dll.config
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\FrontEnd.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\FrontEnd.pdb
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\csc.exe
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\csc.exe.config
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\csc.rsp
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\csi.exe
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\csi.exe.config
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\csi.rsp
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.AppContext.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.Console.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.IO.Compression.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.IO.Pipes.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.Security.Claims.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.ValueTuple.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.Xml.XPath.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\vbc.exe
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\vbc.exe.config
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\vbc.rsp
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\VBCSCompiler.exe
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\Antlr3.Runtime.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\BackEnd.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\EntityFramework.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\EntityFramework.SqlServer.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\Newtonsoft.Json.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\System.Web.Helpers.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\System.Web.Mvc.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\System.Web.Optimization.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\System.Web.Razor.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\System.Web.WebPages.Deployment.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\System.Web.WebPages.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\System.Web.WebPages.Razor.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\WebGrease.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\BackEnd.pdb
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\BackEnd.dll.config
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\System.Web.Helpers.xml
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\System.Web.Mvc.xml
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\System.Web.Optimization.xml
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\System.Web.Razor.xml
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\System.Web.WebPages.xml
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\System.Web.WebPages.Deployment.xml
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\System.Web.WebPages.Razor.xml
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\Newtonsoft.Json.xml
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\Antlr3.Runtime.pdb
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\es\System.Web.Helpers.resources.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\es\System.Web.Mvc.resources.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\es\System.Web.Optimization.resources.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\es\System.Web.Razor.resources.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\es\System.Web.WebPages.resources.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\obj\Debug\FrontEnd.csprojAssemblyReference.cache
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\obj\Debug\FrontEnd.csproj.CoreCompileInputs.cache
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\obj\Debug\FrontEnd.csproj.CopyComplete
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\obj\Debug\FrontEnd.dll
+C:\Users\latitud\Desktop\Fidelitas\3er Cuatri 2020\Progra Web\Nueva carpeta\Licorera\FrontEnd\obj\Debug\FrontEnd.pdb
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\FrontEnd.dll.config
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\FrontEnd.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\FrontEnd.pdb
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\csc.exe
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\csc.exe.config
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\csc.rsp
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\csi.exe
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\csi.exe.config
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\csi.rsp
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.AppContext.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.Console.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.IO.Compression.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.IO.Pipes.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.Security.Claims.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.ValueTuple.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.Xml.XPath.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\vbc.exe
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\vbc.exe.config
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\vbc.rsp
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\VBCSCompiler.exe
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\Antlr3.Runtime.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\BackEnd.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\EntityFramework.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\EntityFramework.SqlServer.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\Newtonsoft.Json.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\System.Web.Helpers.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\System.Web.Mvc.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\System.Web.Optimization.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\System.Web.Razor.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\System.Web.WebPages.Deployment.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\System.Web.WebPages.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\System.Web.WebPages.Razor.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\WebGrease.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\BackEnd.pdb
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\BackEnd.dll.config
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\System.Web.Helpers.xml
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\System.Web.Mvc.xml
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\System.Web.Optimization.xml
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\System.Web.Razor.xml
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\System.Web.WebPages.xml
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\System.Web.WebPages.Deployment.xml
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\System.Web.WebPages.Razor.xml
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\Newtonsoft.Json.xml
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\Antlr3.Runtime.pdb
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\es\System.Web.Helpers.resources.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\es\System.Web.Mvc.resources.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\es\System.Web.Optimization.resources.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\es\System.Web.Razor.resources.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\es\System.Web.WebPages.resources.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\obj\Debug\FrontEnd.csprojAssemblyReference.cache
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\obj\Debug\FrontEnd.csproj.CoreCompileInputs.cache
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\obj\Debug\FrontEnd.csproj.CopyComplete
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\obj\Debug\FrontEnd.dll
+C:\Users\FabianSanchezM\Downloads\Licorera\FrontEnd\obj\Debug\FrontEnd.pdb
+C:\Progra5\Licorera\FrontEnd\bin\FrontEnd.dll.config
+C:\Progra5\Licorera\FrontEnd\bin\FrontEnd.dll
+C:\Progra5\Licorera\FrontEnd\bin\FrontEnd.pdb
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\csc.exe
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\csc.exe.config
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\csc.rsp
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\csi.exe
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\csi.exe.config
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\csi.rsp
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.AppContext.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.Collections.Immutable.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.Console.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.IO.Compression.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.IO.FileSystem.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.IO.Pipes.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.Reflection.Metadata.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.Security.AccessControl.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.Security.Claims.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.ValueTuple.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.Xml.XPath.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\vbc.exe
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\vbc.exe.config
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\vbc.rsp
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\VBCSCompiler.exe
+C:\Progra5\Licorera\FrontEnd\bin\roslyn\VBCSCompiler.exe.config
+C:\Progra5\Licorera\FrontEnd\bin\Antlr3.Runtime.dll
+C:\Progra5\Licorera\FrontEnd\bin\BackEnd.dll
+C:\Progra5\Licorera\FrontEnd\bin\EntityFramework.dll
+C:\Progra5\Licorera\FrontEnd\bin\EntityFramework.SqlServer.dll
+C:\Progra5\Licorera\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Progra5\Licorera\FrontEnd\bin\Microsoft.Web.Infrastructure.dll
+C:\Progra5\Licorera\FrontEnd\bin\Newtonsoft.Json.dll
+C:\Progra5\Licorera\FrontEnd\bin\System.Web.Helpers.dll
+C:\Progra5\Licorera\FrontEnd\bin\System.Web.Mvc.dll
+C:\Progra5\Licorera\FrontEnd\bin\System.Web.Optimization.dll
+C:\Progra5\Licorera\FrontEnd\bin\System.Web.Razor.dll
+C:\Progra5\Licorera\FrontEnd\bin\System.Web.WebPages.Deployment.dll
+C:\Progra5\Licorera\FrontEnd\bin\System.Web.WebPages.dll
+C:\Progra5\Licorera\FrontEnd\bin\System.Web.WebPages.Razor.dll
+C:\Progra5\Licorera\FrontEnd\bin\WebGrease.dll
+C:\Progra5\Licorera\FrontEnd\bin\BackEnd.pdb
+C:\Progra5\Licorera\FrontEnd\bin\BackEnd.dll.config
+C:\Progra5\Licorera\FrontEnd\bin\System.Web.Helpers.xml
+C:\Progra5\Licorera\FrontEnd\bin\System.Web.Mvc.xml
+C:\Progra5\Licorera\FrontEnd\bin\System.Web.Optimization.xml
+C:\Progra5\Licorera\FrontEnd\bin\System.Web.Razor.xml
+C:\Progra5\Licorera\FrontEnd\bin\System.Web.WebPages.xml
+C:\Progra5\Licorera\FrontEnd\bin\System.Web.WebPages.Deployment.xml
+C:\Progra5\Licorera\FrontEnd\bin\System.Web.WebPages.Razor.xml
+C:\Progra5\Licorera\FrontEnd\bin\Newtonsoft.Json.xml
+C:\Progra5\Licorera\FrontEnd\bin\Antlr3.Runtime.pdb
+C:\Progra5\Licorera\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Progra5\Licorera\FrontEnd\bin\es\System.Web.Helpers.resources.dll
+C:\Progra5\Licorera\FrontEnd\bin\es\System.Web.Mvc.resources.dll
+C:\Progra5\Licorera\FrontEnd\bin\es\System.Web.Optimization.resources.dll
+C:\Progra5\Licorera\FrontEnd\bin\es\System.Web.Razor.resources.dll
+C:\Progra5\Licorera\FrontEnd\bin\es\System.Web.WebPages.resources.dll
+C:\Progra5\Licorera\FrontEnd\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Progra5\Licorera\FrontEnd\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Progra5\Licorera\FrontEnd\obj\Debug\FrontEnd.csprojAssemblyReference.cache
+C:\Progra5\Licorera\FrontEnd\obj\Debug\FrontEnd.csproj.CoreCompileInputs.cache
+C:\Progra5\Licorera\FrontEnd\obj\Debug\FrontEnd.csproj.CopyComplete
+C:\Progra5\Licorera\FrontEnd\obj\Debug\FrontEnd.dll
+C:\Progra5\Licorera\FrontEnd\obj\Debug\FrontEnd.pdb
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\FrontEnd.dll.config
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\FrontEnd.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\FrontEnd.pdb
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\csc.exe
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\csc.exe.config
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\csc.rsp
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\csi.exe
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\csi.exe.config
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\csi.rsp
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.AppContext.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.Collections.Immutable.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.Console.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.IO.Compression.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.IO.FileSystem.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.IO.Pipes.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.Reflection.Metadata.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.Security.AccessControl.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.Security.Claims.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.ValueTuple.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.Xml.XPath.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\vbc.exe
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\vbc.exe.config
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\vbc.rsp
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\VBCSCompiler.exe
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\roslyn\VBCSCompiler.exe.config
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\Antlr3.Runtime.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\BackEnd.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\EntityFramework.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\EntityFramework.SqlServer.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\Microsoft.Web.Infrastructure.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\Newtonsoft.Json.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\System.Web.Helpers.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\System.Web.Mvc.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\System.Web.Optimization.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\System.Web.Razor.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\System.Web.WebPages.Deployment.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\System.Web.WebPages.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\System.Web.WebPages.Razor.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\WebGrease.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\BackEnd.pdb
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\BackEnd.dll.config
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\System.Web.Helpers.xml
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\System.Web.Mvc.xml
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\System.Web.Optimization.xml
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\System.Web.Razor.xml
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\System.Web.WebPages.xml
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\System.Web.WebPages.Deployment.xml
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\System.Web.WebPages.Razor.xml
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\Newtonsoft.Json.xml
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\Antlr3.Runtime.pdb
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\es\System.Web.Helpers.resources.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\es\System.Web.Mvc.resources.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\es\System.Web.Optimization.resources.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\es\System.Web.Razor.resources.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\es\System.Web.WebPages.resources.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\obj\Debug\FrontEnd.csprojAssemblyReference.cache
+C:\Projects\Progra5\Licorera2\FrontEnd\obj\Debug\FrontEnd.csproj.CoreCompileInputs.cache
+C:\Projects\Progra5\Licorera2\FrontEnd\obj\Debug\FrontEnd.csproj.CopyComplete
+C:\Projects\Progra5\Licorera2\FrontEnd\obj\Debug\FrontEnd.dll
+C:\Projects\Progra5\Licorera2\FrontEnd\obj\Debug\FrontEnd.pdb
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\FrontEnd.dll.config
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\FrontEnd.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\FrontEnd.pdb
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\csc.exe
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\csc.exe.config
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\csc.rsp
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\csi.exe
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\csi.exe.config
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\csi.rsp
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.AppContext.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.Console.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.IO.Compression.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.Security.Claims.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.ValueTuple.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\vbc.exe
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\vbc.exe.config
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\vbc.rsp
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\VBCSCompiler.exe
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\Antlr3.Runtime.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\BackEnd.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\EntityFramework.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\EntityFramework.SqlServer.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\Newtonsoft.Json.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\System.Web.Helpers.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\System.Web.Mvc.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\System.Web.Optimization.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\System.Web.Razor.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\System.Web.WebPages.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\System.Web.WebPages.Razor.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\WebGrease.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\BackEnd.pdb
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\BackEnd.dll.config
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\System.Web.Helpers.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\System.Web.Mvc.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\System.Web.Optimization.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\System.Web.Razor.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\System.Web.WebPages.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\System.Web.WebPages.Razor.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\Newtonsoft.Json.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\Antlr3.Runtime.pdb
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\es\System.Web.Razor.resources.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\obj\Debug\FrontEnd.csprojAssemblyReference.cache
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\obj\Debug\FrontEnd.csproj.CopyComplete
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\obj\Debug\FrontEnd.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera2\FrontEnd\obj\Debug\FrontEnd.pdb
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\obj\Debug\FrontEnd.csprojAssemblyReference.cache
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\FrontEnd.dll.config
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\FrontEnd.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\FrontEnd.pdb
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\csc.exe
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\csc.exe.config
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\csc.rsp
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\csi.exe
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\csi.exe.config
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\csi.rsp
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.AppContext.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Console.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.IO.Compression.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.IO.Pipes.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Security.Claims.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.ValueTuple.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Xml.XPath.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\vbc.exe
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\vbc.exe.config
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\vbc.rsp
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\VBCSCompiler.exe
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\Antlr3.Runtime.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\BackEnd.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\EntityFramework.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\EntityFramework.SqlServer.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\Newtonsoft.Json.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\System.Web.Helpers.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\System.Web.Mvc.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\System.Web.Optimization.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\System.Web.Razor.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\System.Web.WebPages.Deployment.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\System.Web.WebPages.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\System.Web.WebPages.Razor.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\WebGrease.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\BackEnd.pdb
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\BackEnd.dll.config
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\System.Web.Helpers.xml
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\System.Web.Mvc.xml
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\System.Web.Optimization.xml
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\System.Web.Razor.xml
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\System.Web.WebPages.xml
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\System.Web.WebPages.Deployment.xml
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\System.Web.WebPages.Razor.xml
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\Newtonsoft.Json.xml
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\Antlr3.Runtime.pdb
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\es\System.Web.Helpers.resources.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\es\System.Web.Mvc.resources.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\es\System.Web.Optimization.resources.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\es\System.Web.Razor.resources.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\es\System.Web.WebPages.resources.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\obj\Debug\FrontEnd.csproj.CopyComplete
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\obj\Debug\FrontEnd.dll
+C:\Users\diego\Desktop\U\Progra 5\Licorera\FrontEnd\obj\Debug\FrontEnd.pdb
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\FrontEnd.dll.config
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\FrontEnd.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\FrontEnd.pdb
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\csc.exe
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\csc.exe.config
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\csc.rsp
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\csi.exe
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\csi.exe.config
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\csi.rsp
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.AppContext.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Console.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.IO.Compression.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Security.Claims.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.ValueTuple.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\vbc.exe
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\vbc.exe.config
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\vbc.rsp
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\VBCSCompiler.exe
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\Antlr3.Runtime.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\BackEnd.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\EntityFramework.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\EntityFramework.SqlServer.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\Newtonsoft.Json.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\System.Web.Helpers.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\System.Web.Mvc.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\System.Web.Optimization.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\System.Web.Razor.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\System.Web.WebPages.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\System.Web.WebPages.Razor.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\WebGrease.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\BackEnd.pdb
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\BackEnd.dll.config
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\System.Web.Helpers.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\System.Web.Mvc.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\System.Web.Optimization.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\System.Web.Razor.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\System.Web.WebPages.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\System.Web.WebPages.Razor.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\Newtonsoft.Json.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\Antlr3.Runtime.pdb
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\es\System.Web.Razor.resources.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\obj\Debug\FrontEnd.csprojAssemblyReference.cache
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\obj\Debug\FrontEnd.csproj.CopyComplete
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\obj\Debug\FrontEnd.dll
+C:\Users\Diego Valverde\Desktop\Temporales\U\Progra 5\Licorera\FrontEnd\obj\Debug\FrontEnd.pdb
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\FrontEnd.dll.config
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\FrontEnd.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\FrontEnd.pdb
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\csc.exe
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\csc.exe.config
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\csc.rsp
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\csi.exe
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\csi.exe.config
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\csi.rsp
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.AppContext.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.Console.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.IO.Compression.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.IO.Pipes.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.Security.Claims.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.ValueTuple.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.Xml.XPath.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\vbc.exe
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\vbc.exe.config
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\vbc.rsp
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\VBCSCompiler.exe
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\Antlr3.Runtime.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\BackEnd.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\EntityFramework.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\EntityFramework.SqlServer.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\Newtonsoft.Json.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\System.Web.Helpers.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\System.Web.Mvc.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\System.Web.Optimization.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\System.Web.Razor.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\System.Web.WebPages.Deployment.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\System.Web.WebPages.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\System.Web.WebPages.Razor.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\WebGrease.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\BackEnd.pdb
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\BackEnd.dll.config
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\System.Web.Helpers.xml
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\System.Web.Mvc.xml
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\System.Web.Optimization.xml
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\System.Web.Razor.xml
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\System.Web.WebPages.xml
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\System.Web.WebPages.Deployment.xml
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\System.Web.WebPages.Razor.xml
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\Newtonsoft.Json.xml
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\Antlr3.Runtime.pdb
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\es\System.Web.Helpers.resources.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\es\System.Web.Mvc.resources.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\es\System.Web.Optimization.resources.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\es\System.Web.Razor.resources.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\es\System.Web.WebPages.resources.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\obj\Debug\FrontEnd.csprojAssemblyReference.cache
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\obj\Debug\FrontEnd.csproj.CoreCompileInputs.cache
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\obj\Debug\FrontEnd.csproj.CopyComplete
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\obj\Debug\FrontEnd.dll
+C:\Users\FabianSanchezM\Desktop\Licorera\FrontEnd\obj\Debug\FrontEnd.pdb

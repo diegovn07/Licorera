@@ -14,6 +14,12 @@ namespace BackEnd.Entities
     
     public partial class Licores
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Licores()
+        {
+            this.Detalles_Pedido = new HashSet<Detalles_Pedido>();
+        }
+    
         public int idLicor { get; set; }
         public int idMarca { get; set; }
         public int idTipo { get; set; }
@@ -23,7 +29,10 @@ namespace BackEnd.Entities
         public int iPrecio { get; set; }
         public string Foto_Licor { get; set; }
         public Nullable<int> iMl { get; set; }
+        public string Foto_Detalles { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Detalles_Pedido> Detalles_Pedido { get; set; }
         public virtual Marcas Marcas { get; set; }
         public virtual Proveedores Proveedores { get; set; }
         public virtual Tipos Tipos { get; set; }

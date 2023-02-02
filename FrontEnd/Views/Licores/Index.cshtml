@@ -3,7 +3,7 @@
 @{
     ViewBag.Title = "Licorera El Alto";
 }
-    <div class="container">
+    <div class="container-fluid">
         <h2>Licorera El Alto</h2>
         <div class="d-flex">
             <input class="form-control" id="myInput" type="text" placeholder="Buscar..">
@@ -25,9 +25,6 @@
                     </th>
                     <th class="text-center">
                         @Html.DisplayNameFor(model => model.idProveedor)
-                    </th>
-                    <th class="text-center">
-                        @Html.DisplayNameFor(model => model.vDescripción)
                     </th>
                     <th class="text-center">
                         @Html.DisplayNameFor(model => model.iUnidades)
@@ -58,9 +55,6 @@
                             @Html.DisplayFor(modelItem => item.proveedor.vNombre)
                         </td>
                         <td class="align-middle">
-                            @Html.DisplayFor(modelItem => item.vDescripción)
-                        </td>
-                        <td class="align-middle">
                             @Html.DisplayFor(modelItem => item.iUnidades)
                         </td>
                         <td class="align-middle">
@@ -70,10 +64,11 @@
                             @Html.DisplayFor(modelItem => item.iMl) ml
                         </td>
                         <td class="align-middle">
-                            <figure class="figure">
+                            <div>
                                 @{ var imgSrc = String.Format("data:image/jpg;base64,{0}", item.Foto_Licor);}
-                                <img style="height:200px" src="@imgSrc" class="figure-img img-fluid rounded" alt="...">
-                            </figure>
+                                <img class="img-thumbnail" style="height:200px;width:200px"
+                                     src="@imgSrc" alt="Sample"> 
+                            </div>
                         </td>
                         <td class="align-middle">
                             @Html.ActionLink("Editar", "Edit", new { id = item.idLicor }) |

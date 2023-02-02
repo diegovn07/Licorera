@@ -1,0 +1,28 @@
+﻿@model FrontEnd.Models.ViewModel.RecoveryViewModel
+
+@{
+    ViewBag.Title = "StartRecovery";
+    Layout = "~/Views/Shared/NormalUser_Layout.cshtml";
+}
+    <center>
+        <br />
+        <br />
+        <h2>Recuperación de contraseña</h2>
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-md-6 offset-3">
+                <div class="form-style">
+                    <form action="@Url.Content("~/User/StartRecovery")" method="post">
+                        <label> Escribe tu correo electrónico</label>
+                        @Html.TextBoxFor(d => d.Email, null, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(d => d.Email, null, new { style = "color:red" })
+                        <br />
+                        <button class="btn btn-primary"> Recuperar</button>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </center>

@@ -9,6 +9,7 @@ using FrontEnd.Models;
 
 namespace FrontEnd.Controllers
 {
+    [Authorize(Roles = "Administrador")]
     public class ProveedoresController : Controller
     {
         private ProveedoresViewModel Convertir(Proveedores proveedor)
@@ -85,8 +86,6 @@ namespace FrontEnd.Controllers
                 proveedor = unidad.genericDAL.Get(id);
 
             }
-
-
             return View(this.Convertir(proveedor));
         }
 
